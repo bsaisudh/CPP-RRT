@@ -11,14 +11,15 @@
 
 class Square : public Obstacle {
  private:
-  int startx;
-  int starty;
+  int startX;
+  int startY;
   int side;
 
  public:
   Square();
   void setBoundary();
   void dispBoundary();
+  bool inObstacle(int xCoord, int yCoord);
   virtual ~Square();
 };
 

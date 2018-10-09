@@ -8,21 +8,33 @@
 #include "Square.h"
 #include <iostream>
 
-Square::Square() {
-  startx = 0;
-  starty = 0;
-  side = 0;
-  // TODO Auto-generated constructor stub
-
+Square::Square()
+    : startX(0),
+      startY(0),
+      side(0) {
 }
 
-void Square::setBoundary(){
-  std::cout << "enter 3 nos" << std::endl;
-  std::cin >> startx >> starty >> side;
+void Square::setBoundary() {
+  std::cout << "Enter StartX :";
+  std::cin >> startX;
+  std::cout << "Enter StartY :";
+  std::cin >> startY;
+  std::cout << "Enter Side :";
+  std::cin >> side;
 }
 
-void Square::dispBoundary(){
-  std::cout << "1:" << startx << " 2 :" << starty << " 3: " << side;
+void Square::dispBoundary() {
+  std::cout << "StartX:" << startX << " StartY :" << startY << " Side: " << side
+            << std::endl;
+}
+
+bool Square::inObstacle(int xCoord, int yCoord) {
+  if (xCoord >= startX && xCoord <= startX + side && yCoord >= startY
+      && yCoord <= startY + side) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 Square::~Square() {

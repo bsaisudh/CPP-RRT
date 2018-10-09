@@ -20,6 +20,8 @@ class Obstacle {
  public:
   Obstacle();
   virtual void setBoundary() = 0;
+  virtual void dispBoundary() = 0;
+  virtual bool inObstacle(int xCoord, int yCoord) = 0;
   virtual ~Obstacle();
 };
 
