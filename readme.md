@@ -1,6 +1,6 @@
 # C++ Boilerplate
 [![Build Status](https://travis-ci.org/bsaisudh/CPP-RRT.svg?branch=master)](https://travis-ci.org/bsaisudh/CPP-RRT)
-[![Coverage Status](https://coveralls.io/repos/github/dpiet/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/dpiet/cpp-boilerplate?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/bsaisudh/CPP-RRT/badge.svg?branch=master)](https://coveralls.io/github/bsaisudh/CPP-RRT?branch=master)
 ---
 
 ## Overview
