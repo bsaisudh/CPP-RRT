@@ -28,7 +28,7 @@ Google Test
 GNU Plot
 
 ## Agile Development Process
-This product has been developed by following the Solo Iterative Process (SIP), which is an agile development process. Agile software development is an approach to software development under which requirements and solutions evolve through the collaborative effort of self-organizing and cross-functional teams and their customers/end users. You can view the product backlog and development process in this [SPREADSHEET](https://docs.google.com/spreadsheets/d/1cJVLNv9pZ2T4a17OsMPn_WnxRS6tAkfYJKaMcSRo6MA/edit#gid=904828225)
+Pair programming is an agile software development technique in which two programmers work together at one workstation. One, the driver, writes code while the other, the observer or navigator, reviews each line of code as it is typed in. The two programmers switch roles frequently.. You can view the product backlog and development process in this [SPREADSHEET](https://docs.google.com/spreadsheets/d/1cJVLNv9pZ2T4a17OsMPn_WnxRS6tAkfYJKaMcSRo6MA/edit#gid=904828225)
 
 ## Standard install via command-line
 ```
