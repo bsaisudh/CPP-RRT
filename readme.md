@@ -15,6 +15,12 @@ RRTs are kinodynamic planners that can be used to calculate the trajectory of a 
 algorithm uses incremental motions, it can be used in Collision detection. The RRT algorithm can be used to
 produce good guesses for variational optimization techniques.
 
+## UML Diagrams
+### Class Diagrams
+![alt text](https://raw.githubusercontent.com/bsaisudh/CPP-RRT/master/UML/Initial/classDescriptions.png)
+### Activity Diagrams
+![alt text](https://raw.githubusercontent.com/bsaisudh/CPP-RRT/master/UML/Initial/Activity%20Diagram%20Compute%20Path.png)
+![alt text](https://raw.githubusercontent.com/bsaisudh/CPP-RRT/master/UML/Initial/activityDiagram_RRT.png)
 ## Dependencies
 Cmake
 Google Test
