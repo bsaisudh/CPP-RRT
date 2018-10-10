@@ -4,7 +4,6 @@
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://raw.githubusercontent.com/bsaisudh/CPP-RRT/master/LICENSE)
 
 ---
-
 ## Overview
 
 Path planning for a point robot using Rapidly Exploring Random Trees (RRT) on a known 2D space. The algorithm
@@ -18,13 +17,18 @@ produce good guesses for variational optimization techniques.
 ## UML Diagrams
 ### Class Diagrams
 ![alt text](https://raw.githubusercontent.com/bsaisudh/CPP-RRT/master/UML/Initial/classDescriptions.png)
+
 ### Activity Diagrams
 ![alt text](https://raw.githubusercontent.com/bsaisudh/CPP-RRT/master/UML/Initial/Activity%20Diagram%20Compute%20Path.png)
 ![alt text](https://raw.githubusercontent.com/bsaisudh/CPP-RRT/master/UML/Initial/activityDiagram_RRT.png)
+
 ## Dependencies
 Cmake
 Google Test
 GNU Plot
+
+## Agile Development Process
+This product has been developed by following the Solo Iterative Process (SIP), which is an agile development process. Agile software development is an approach to software development under which requirements and solutions evolve through the collaborative effort of self-organizing and cross-functional teams and their customers/end users. You can view the product backlog and development process in this [SPREADSHEET](https://docs.google.com/spreadsheets/d/1cJVLNv9pZ2T4a17OsMPn_WnxRS6tAkfYJKaMcSRo6MA/edit#gid=904828225)
 
 ## Standard install via command-line
 ```
