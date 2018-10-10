@@ -1,6 +1,8 @@
 # ENPM 808X Midterm Project - RRT Path Planning
 [![Build Status](https://travis-ci.org/bsaisudh/CPP-RRT.svg?branch=master)](https://travis-ci.org/bsaisudh/CPP-RRT)
 [![Coverage Status](https://coveralls.io/repos/github/bsaisudh/CPP-RRT/badge.svg?branch=master)](https://coveralls.io/github/bsaisudh/CPP-RRT?branch=master)
+[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://raw.githubusercontent.com/bsaisudh/CPP-RRT/master/LICENSE)
+
 ---
 
 ## Overview
