@@ -20,8 +20,9 @@ class InputMap {
   std::unique_ptr<RobotWorkspace> ws;
  public:
   InputMap();
-  void getWorkspace(const std::unique_ptr<RobotWorkspace> ws_);
-  void getObstacle(const std::vector<std::unique_ptr<Obstacle>> &ob_);
+  void setWorkspace(const std::unique_ptr<RobotWorkspace> ws_);
+  void addObstacle(const std::vector<std::unique_ptr<Obstacle>> &ob_);
+  void deriveConfigSpace();
   virtual ~InputMap();
 };
 

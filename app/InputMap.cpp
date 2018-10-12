@@ -12,14 +12,18 @@ InputMap::InputMap() {
 
 }
 
-void InputMap::getObstacle(const std::vector<std::unique_ptr<Obstacle>> &ob_) {
-  for ( const auto &i : ob_) {
+void InputMap::addObstacle(const std::vector<std::unique_ptr<Obstacle>> &ob_) {
+  for (const auto &i : ob_) {
     ob.emplace_back(std::move(i));
   }
 }
 
-void InputMap::getWorkspace(const std::unique_ptr<RobotWorkspace> ws_) {
+void InputMap::setWorkspace(const std::unique_ptr<RobotWorkspace> ws_) {
   ws = std::move(ws_);
+}
+
+void InputMap::deriveConfigSpace() {
+
 }
 
 InputMap::~InputMap() {
