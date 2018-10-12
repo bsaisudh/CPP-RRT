@@ -14,6 +14,7 @@ class Square : public Obstacle {
   int startX;
   int startY;
   int side;
+  bool checkValidity();
 
  public:
   Square();

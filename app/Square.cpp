@@ -14,6 +14,10 @@ Square::Square()
       side(0) {
 }
 
+bool Square::checkValidity() {
+  return true;
+}
+
 void Square::setBoundary() {
   std::cout << "Enter StartX :";
   std::cin >> startX;

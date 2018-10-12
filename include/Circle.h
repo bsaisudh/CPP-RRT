@@ -14,6 +14,8 @@ class Circle : public Obstacle {
  private:
   int center;
   int radius;
+  bool checkValidity();
+
  public:
   Circle();
   void setBoundary();

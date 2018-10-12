@@ -14,6 +14,10 @@ Circle::Circle()
 
 }
 
+bool Circle::checkValidity() {
+  return true;
+}
+
 void Circle::setBoundary() {
 
 }
