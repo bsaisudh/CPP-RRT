@@ -1,28 +1,28 @@
 /*
- * Input.cpp
+ * InputMap.cpp
  *
  *  Created on: Oct 7, 2018
  *      Author: bala
  */
 
-#include "Input.h"
+#include "../include/InputMap.h"
 
-Input::Input() {
+InputMap::InputMap() {
   // TODO Auto-generated constructor stub
 
 }
 
-void Input::getObstacle(const std::vector<std::unique_ptr<Obstacle>> &ob_) {
+void InputMap::getObstacle(const std::vector<std::unique_ptr<Obstacle>> &ob_) {
   for ( const auto &i : ob_) {
     ob.emplace_back(std::move(i));
   }
 }
 
-void Input::getWorkspace(const std::unique_ptr<RobotWorkspace> ws_) {
+void InputMap::getWorkspace(const std::unique_ptr<RobotWorkspace> ws_) {
   ws = std::move(ws_);
 }
 
-Input::~Input() {
+InputMap::~InputMap() {
   // TODO Auto-generated destructor stub
 }
 

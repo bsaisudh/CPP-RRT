@@ -1,12 +1,12 @@
 /*
- * Input.h
+ * InputMap.h
  *
  *  Created on: Oct 7, 2018
  *      Author: bala
  */
 
-#ifndef INPUT_H_
-#define INPUT_H_
+#ifndef INPUTMAP_H_
+#define INPUTMAP_H_
 
 #include <vector>
 #include <memory>
@@ -14,15 +14,15 @@
 #include "Obstacle.h"
 #include "RobotWorkspace.h"
 
-class Input {
+class InputMap {
  private:
   std::vector<std::unique_ptr<Obstacle>> ob;
   std::unique_ptr<RobotWorkspace> ws;
  public:
-  Input();
+  InputMap();
   void getWorkspace(const std::unique_ptr<RobotWorkspace> ws_);
   void getObstacle(const std::vector<std::unique_ptr<Obstacle>> &ob_);
-  virtual ~Input();
+  virtual ~InputMap();
 };
 
-#endif /* INPUT_H_ */
+#endif /* INPUTMAP_H_ */
