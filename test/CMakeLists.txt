@@ -4,6 +4,7 @@ add_executable(
     cpp-test
     main.cpp
     ObstacleTest.cpp
+    RobotWorkspaceTest.cpp
     ../app/Circle.cpp
     ../app/InputMap.cpp
     ../app/Obstacle.cpp
@@ -11,7 +12,6 @@ add_executable(
     ../app/RobotWorkspace.cpp
     ../app/RRT.cpp
     ../app/Square.cpp
-    test.cpp
 )
 
 target_include_directories(cpp-test PUBLIC ../vendor/googletest/googletest/include 
