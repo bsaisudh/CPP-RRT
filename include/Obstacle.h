@@ -10,6 +10,8 @@
 #ifndef OBSTACLE_H_
 #define OBSTACLE_H_
 
+#include <iostream>
+
 /**
  * @brief Obstacle class
  *
@@ -19,8 +21,8 @@ class Obstacle {
 
  public:
   Obstacle();
-  virtual void setBoundary() = 0;
-  virtual void dispBoundary() = 0;
+  virtual void setBoundary(std::istream &in , std::ostream &out) = 0;
+  virtual void dispBoundary(std::ostream &out) = 0;
   virtual bool inObstacle(int xCoord, int yCoord) = 0;
   virtual ~Obstacle();
 };

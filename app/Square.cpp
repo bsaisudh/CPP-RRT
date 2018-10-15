@@ -6,7 +6,6 @@
  */
 
 #include "Square.h"
-#include <iostream>
 
 Square::Square()
     : startX(0),
@@ -18,17 +17,17 @@ bool Square::checkValidity() {
   return true;
 }
 
-void Square::setBoundary() {
-  std::cout << "Enter StartX :";
-  std::cin >> startX;
-  std::cout << "Enter StartY :";
-  std::cin >> startY;
-  std::cout << "Enter Side :";
-  std::cin >> side;
+void Square::setBoundary(std::istream &in , std::ostream &out) {
+  out << "Enter StartX :";
+  in >> startX;
+  out << "Enter StartY :";
+  in >> startY;
+  out << "Enter Side :";
+  in >> side;
 }
 
-void Square::dispBoundary() {
-  std::cout << "StartX:" << startX << " StartY :" << startY << " Side: " << side
+void Square::dispBoundary(std::ostream &out) {
+  out << "StartX:" << startX << " StartY :" << startY << " Side: " << side
             << std::endl;
 }
 

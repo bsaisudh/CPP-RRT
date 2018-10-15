@@ -7,6 +7,8 @@
 #ifndef SQUARE_H_
 #define SQUARE_H_
 
+#include <iostream>
+
 #include "Obstacle.h"
 
 class Square : public Obstacle {
@@ -18,8 +20,8 @@ class Square : public Obstacle {
 
  public:
   Square();
-  void setBoundary();
-  void dispBoundary();
+  void setBoundary(std::istream &in , std::ostream &out);
+  void dispBoundary(std::ostream &out);
   bool inObstacle(int xCoord, int yCoord);
   virtual ~Square();
 };

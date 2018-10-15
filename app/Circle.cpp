@@ -5,10 +5,13 @@
  *      Author: bala
  */
 
+
+
 #include "../include/Circle.h"
 
 Circle::Circle()
-    : center(0),
+    : centerX(0),
+      centerY(0),
       radius(0) {
   // TODO Auto-generated constructor stub
 
@@ -18,19 +21,29 @@ bool Circle::checkValidity() {
   return true;
 }
 
-void Circle::setBoundary() {
-
+void Circle::setBoundary(std::istream &in , std::ostream &out) {
+  out << "Enter Center point :";
+  in >> centerX;
+  out << "Enter Center point :";
+  in >> centerY;
+  out << "Enter Radius:";
+  in >> radius;
 }
 
-void Circle::dispBoundary() {
-
+void Circle::dispBoundary(std::ostream &out) {
+  out << "Center X :" << centerX
+      << " Center Y :" << centerY
+      << " Radius :" << radius
+      << std::endl;
 }
 
 bool Circle::inObstacle(int coordX, int coordY) {
-  return false;
+  int dist = 0;
+  dist = ((centerX - coordX)*(centerX - coordX)) + ((centerY - coordY)*(centerY - coordY)) ;
+  return dist <= radius*radius;
 }
 
 Circle::~Circle() {
-  // TODO Auto-generated destructor stub
+// TODO Auto-generated destructor stub
 }
 

@@ -8,18 +8,21 @@
 #ifndef APP_CIRCLE_H_
 #define APP_CIRCLE_H_
 
+#include <iostream>
+
 #include "Obstacle.h"
 
 class Circle : public Obstacle {
  private:
-  int center;
+  int centerX;
+  int centerY;
   int radius;
   bool checkValidity();
 
  public:
   Circle();
-  void setBoundary();
-  void dispBoundary();
+  void setBoundary(std::istream &in , std::ostream &out);
+  void dispBoundary(std::ostream &out);
   bool inObstacle(int xCoord, int yCoord);
   virtual ~Circle();
 };

@@ -16,13 +16,19 @@
 
 class InputMap {
  private:
-  std::vector<std::unique_ptr<Obstacle>> ob;
-  std::unique_ptr<RobotWorkspace> ws;
+  struct point{
+    int x,y;
+  };
+  std::vector<std::shared_ptr<Obstacle>> ob;
+  std::shared_ptr<RobotWorkspace> ws;
+  std::vector<point> configSpace;
  public:
   InputMap();
-  void setWorkspace(const std::unique_ptr<RobotWorkspace> ws_);
-  void addObstacle(const std::vector<std::unique_ptr<Obstacle>> &ob_);
-  void deriveConfigSpace();
+  InputMap(RobotWorkspace &rws);
+  void setWorkspace(std::shared_ptr<RobotWorkspace> ws_);
+  void addObstacle(std::vector<std::shared_ptr<Obstacle>> &ob_);
+  void computeConfigSpace();
+  void dispConfigSpace(std::ostream &out);
   virtual ~InputMap();
 };
 

@@ -10,8 +10,13 @@
 #include <sstream>
 #include <iostream>
 #include <string>
+#include <memory>
 
+#include "../include/InputMap.h"
 #include "../include/RobotWorkspace.h"
+#include "../include/Obstacle.h"
+#include "../include/Square.h"
+#include "../include/Circle.h"
 
 /**
  * @brief RobotWorkspace class test fixture
@@ -53,7 +58,7 @@ TEST(RobotWorkSpaceClass, Initialization) {
   robotWs.setStart(sin, sout);
   sin.str("");
   sout.str("");
-  robotWs.dispWorkslace(sout);
+  robotWs.dispWorkspace(sout);
   // Test
   ASSERT_STREQ(
       sout.str().c_str(),
