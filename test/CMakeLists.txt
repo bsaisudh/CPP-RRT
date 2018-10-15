@@ -3,9 +3,18 @@ set(GTEST_SHUFFLE 1)
 add_executable(
     cpp-test
     main.cpp
+    ObstacleTest.cpp
+    ../app/Circle.cpp
+    ../app/InputMap.cpp
+    ../app/Obstacle.cpp
+    ../app/PathDisplay.cpp
+    ../app/RobotWorkspace.cpp
+    ../app/RRT.cpp
+    ../app/Square.cpp
     test.cpp
 )
 
 target_include_directories(cpp-test PUBLIC ../vendor/googletest/googletest/include 
-                                           ${CMAKE_SOURCE_DIR}/include)
+                                           ${CMAKE_SOURCE_DIR}/include
+					   ../include)
 target_link_libraries(cpp-test PUBLIC gtest)
