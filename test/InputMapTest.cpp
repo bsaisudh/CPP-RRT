@@ -20,9 +20,9 @@
 #include "../include/Circle.h"
 
 /**
- * @brief Testing input map initialization
+ * @brief Testing input map computation
  */
-TEST(InputMapclass, Initialization){
+TEST(InputMapclass, ConfigSpaceCreation) {
   // Arrange
   std::stringstream sout;
   std::stringstream sin;
@@ -65,7 +65,65 @@ TEST(InputMapclass, Initialization){
 
 }
 
-//void setWorkspace(std::shared_ptr<RobotWorkspace> ws_);
-//void addObstacle(std::vector<std::shared_ptr<Obstacle>> &ob_);
-//void computeConfigSpace();
-//void dispConfigSpace(std::ostream &out);
+/**
+ * @brief Testing input map Set Workspace
+ */
+TEST(InputMapclass, SetWorkspaceTest) {
+  // Arrange
+  std::stringstream sout;
+  std::stringstream sin;
+  std::shared_ptr<RobotWorkspace> _ws(new RobotWorkspace);
+
+  // Act
+  // Add Workspace
+  sin.str("");
+  sout.str("");
+  sin << "6 6 1 1 2 3 ";
+  _ws->setBoundary(sin, sout);
+  _ws->setStart(sin, sout);
+  _ws->setGoal(sin, sout);
+  // Add objects to input map
+  std::shared_ptr<InputMap> im(new InputMap);
+  im->setWorkspace(std::move(_ws));
+  // Act
+  sin.str("");
+  sout.str("");
+  im->ws->dispWorkspace(sout);
+  std::string configSpaceStr = "Start point :1 , 1\n"
+      "Goal point :2 , 3\n"
+      "Workspace : ( 0 , 0 ) ( 6 , 6)\n";
+  // Assert
+  ASSERT_STREQ(sout.str().c_str(), configSpaceStr.c_str());
+
+}
+
+/**
+ * @brief Testing obstacle
+ */
+TEST(InputMapclass, AddObstacleTest) {
+  // Arrange
+  std::stringstream sout;
+  std::stringstream sin;
+  std::vector<std::shared_ptr<Obstacle>> ob;
+
+  // Act
+  // Add Square
+  sin.str("");
+  sout.str("");
+  sin << "2 2 1 ";
+  ob.emplace_back(new Square);
+  ob[0]->setBoundary(sin, sout);
+  // Add objects to input map
+  std::shared_ptr<InputMap> im(new InputMap);
+  im->addObstacle(ob);
+
+  // Act
+  sin.str("");
+  sout.str("");
+  im->ob[0]->dispBoundary(sout);
+  std::string configSpaceStr = "StartX:2 StartY :2 Side: 1\n";
+
+  // Assert
+  ASSERT_STREQ(sout.str().c_str(), configSpaceStr.c_str());
+
+}
