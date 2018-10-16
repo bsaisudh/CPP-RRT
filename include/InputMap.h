@@ -1,12 +1,12 @@
 /*
  * InputMap.h
- *
+ *  Copyright Akshay Rajaraman
  *  Created on: Oct 7, 2018
  *      Author: bala
  */
 
-#ifndef INPUTMAP_H_
-#define INPUTMAP_H_
+#ifndef INCLUDE_INPUTMAP_H_
+#define INCLUDE_INPUTMAP_H_
 
 #include <vector>
 #include <memory>
@@ -15,14 +15,10 @@
 #include "RobotWorkspace.h"
 
 class InputMap {
- private:
-  struct point{
-    int x,y;
-  };
+ public:
   std::vector<std::shared_ptr<Obstacle>> ob;
   std::shared_ptr<RobotWorkspace> ws;
   std::vector<point> configSpace;
- public:
   InputMap();
   InputMap(RobotWorkspace &rws);
   void setWorkspace(std::shared_ptr<RobotWorkspace> ws_);
@@ -32,4 +28,4 @@ class InputMap {
   virtual ~InputMap();
 };
 
-#endif /* INPUTMAP_H_ */
+#endif /* INCLUDE_INPUTMAP_H_ */

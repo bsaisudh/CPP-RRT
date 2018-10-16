@@ -13,10 +13,10 @@
 class RobotWorkspace {
  private:
   int maxX, maxY;
-  int startX,startY;
-  int goalX ,goalY;
   bool checkValidity();
  public:
+  int startX, startY;
+  int goalX , goalY;
   RobotWorkspace();
   virtual ~RobotWorkspace();
   void setBoundary(std::istream &in , std::ostream &out);

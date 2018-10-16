@@ -1,22 +1,21 @@
 /*
  * InputMap.cpp
- *
+ *  Copyright Akshay Rajaraman
  *  Created on: Oct 7, 2018
  *      Author: bala
  */
 
 #include <iostream>
-
+#include <vector>
+#include <utility>
+#include <memory>
 #include "../include/InputMap.h"
 
 InputMap::InputMap() {
-  // TODO Auto-generated constructor stub
-
 }
 
 InputMap::InputMap(RobotWorkspace &rws)
     : ws(&rws) {
-
 }
 
 void InputMap::addObstacle(std::vector<std::shared_ptr<Obstacle>> &ob_) {
@@ -47,13 +46,12 @@ void InputMap::computeConfigSpace() {
   }
 }
 
-void InputMap::dispConfigSpace(std::ostream &out){
-  for(auto &i : configSpace){
+void InputMap::dispConfigSpace(std::ostream &out) {
+  for (auto &i : configSpace) {
     out << "(" << i.x << " , " << i.y << ")" << std::endl;
   }
 }
 
 InputMap::~InputMap() {
-  // TODO Auto-generated destructor stub
 }
 

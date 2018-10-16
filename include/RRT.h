@@ -1,35 +1,36 @@
 /*
  * RRT.h
- *
+ *  Copyright Akshay Rajaraman
  *  Created on: Oct 12, 2018
  *      Author: bala
  */
 
-#ifndef APP_RRT_H_
-#define APP_RRT_H_
+#ifndef INCLUDE_RRT_H_
+#define INCLUDE_RRT_H_
 
 #include <vector>
-
+#include <cstdlib>
+#include <ctime>
+#include <algorithm>
+#include <memory>
 #include "InputMap.h"
 
 class RRT {
- private:
-  InputMap Map;
+ public:
+  std::shared_ptr<InputMap> Map;
+  int startPoint[2];
+  int goalPoint[2];
   int sampledPoint[2];
   int newPoint[2];
-  std::vector<int[2]> Tree;
-
+  std::vector<std::array<int, 4>> Tree;
   bool isGoal();
   void sampleFromCs();
   void addToTree();
-  void computeNewPoint();
+  int computeNewPoint();
   bool updateSampleSpace();
-  std::vector<int[2]> buildPath();
-
- public:
+  std::vector<point> buildPath();
   RRT();
-  std::vector<int[2]> computePath();
   virtual ~RRT();
 };
 
-#endif /* APP_RRT_H_ */
+#endif /* INCLUDE_RRT_H_ */

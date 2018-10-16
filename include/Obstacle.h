@@ -7,18 +7,18 @@
  *
  * Obstacle class declaration.
  */
-#ifndef OBSTACLE_H_
-#define OBSTACLE_H_
+#ifndef INCLUDE_OBSTACLE_H_
+#define INCLUDE_OBSTACLE_H_
 
 #include <iostream>
-
+  struct point{
+      int x, y;
+  };
 /**
  * @brief Obstacle class
  *
  */
 class Obstacle {
- private:
-
  public:
   Obstacle();
   virtual void setBoundary(std::istream &in , std::ostream &out) = 0;
@@ -27,4 +27,4 @@ class Obstacle {
   virtual ~Obstacle();
 };
 
-#endif /* OBSTACLE_H_ */
+#endif /* INCLUDE_OBSTACLE_H_ */
