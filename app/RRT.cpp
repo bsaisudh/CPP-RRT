@@ -13,7 +13,7 @@
 #include <cmath>
 #include <iterator>
 #include <utility>
-
+#include <iostream>
 RRT::RRT() {
 }
 
@@ -41,15 +41,16 @@ void RRT::addToTree() {
     for (int iter = 0; iter < Map -> configSpace.size(); iter++) {
       if (Map -> configSpace.at(iter).x == point.x &&
           Map -> configSpace.at(iter).y == point.y) {
+        int test = Tree.size();
         Tree.push_back({{newPoint[0], newPoint[1],
                 static_cast<int>(Tree.size())+1,
-                Tree.at(parentPointIndex)[3]}});
+                Tree.at(parentPointIndex)[2]}});
       }
     }
 }
 
 int RRT::computeNewPoint() {
-  std::vector<int> distance;
+  std::vector<double> distance;
     for (int i = 0; i < Tree.size(); i++) {
       distance.push_back(std::pow(std::pow(Tree.at(i)[0]-sampledPoint[0], 2)+
           std::pow(Tree.at(i)[1]-sampledPoint[1], 2), 0.5));
@@ -70,7 +71,7 @@ int RRT::computeNewPoint() {
         {Tree.at(index)[1]-1, Tree.at(index)[2]-1},
         {Tree.at(index)[1]-1, Tree.at(index)[2]},
         {Tree.at(index)[1]-1, Tree.at(index)[2]+1}};
-    std::vector<int> distanceFromNewPoints;
+    std::vector<double> distanceFromNewPoints;
     for (int j = 0; j < 8; j++) {
       distanceFromNewPoints.push_back(std::pow(
           std::pow(availableMovements[j][0]-sampledPoint[0], 2)+
@@ -84,8 +85,8 @@ int RRT::computeNewPoint() {
            newPointIndex = i;
         }
       }
-      newPoint[0] = availableMovements[index][0];
-      newPoint[1] = availableMovements[index][1];
+      newPoint[0] = availableMovements[newPointIndex][0];
+      newPoint[1] = availableMovements[newPointIndex][1];
       return index;
 }
 
@@ -99,6 +100,11 @@ bool RRT::updateSampleSpace() {
           Map ->  configSpace.erase(Map -> configSpace.begin()+iter);
         }
       }
+  if (Map -> configSpace.size() == 1) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 std::vector<point> RRT::buildPath() {
@@ -111,18 +117,26 @@ std::vector<point> RRT::buildPath() {
     sampleFromCs();
     addToTree();
     computeNewPoint();
-    if (isGoal()) {
-      break;
-    }
+    bool isNotReachable = updateSampleSpace();
+    if (isNotReachable) {
+        break;
+      }
   }
   std::vector<point> path;
-  int newIndex = Tree.size();
+  int newIndex = Tree.size() - 1;
+  point parentPoint;
   while (newIndex != 0) {
-      point parentPoint;
-      parentPoint.x = Tree.at(newIndex)[0];
-      parentPoint.y = Tree.at(newIndex)[1];
-      path.push_back(parentPoint);
-      newIndex = Tree.at(newIndex)[2];
+    parentPoint.x = Tree.at(newIndex)[0];
+    parentPoint.y = Tree.at(newIndex)[1];
+    path.push_back(parentPoint);
+    newIndex = Tree.at(newIndex)[3];
+    std::cout << Tree.at(newIndex)[0];
+    std::cout << Tree.at(newIndex)[1];
+    std::cout << Tree.at(newIndex)[2];
+    std::cout << Tree.at(newIndex)[3];
+    int x;
+    std::cin >> x;
+    std::cout << newIndex;
   }
   return path;
 }
