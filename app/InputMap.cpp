@@ -14,11 +14,6 @@ InputMap::InputMap() {
 
 }
 
-InputMap::InputMap(RobotWorkspace &rws)
-    : ws(&rws) {
-
-}
-
 void InputMap::addObstacle(std::vector<std::shared_ptr<Obstacle>> &ob_) {
   for (const auto &i : ob_) {
     ob.emplace_back(std::move(i));

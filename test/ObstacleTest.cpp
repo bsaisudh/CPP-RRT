@@ -60,10 +60,23 @@ TEST(SquareClass, Initialization) {
 /**
  * @brief Testing if point is inside square obstacle or not
  */
-TEST_F(SquareTest , insideOutsideObstacle) {
+TEST_F(SquareTest , InsideOutsideObstacle) {
   ASSERT_EQ(sq->inObstacle(10, 10), false);
   ASSERT_EQ(sq->inObstacle(3, 3), true);
 }
+
+/**
+ * @brief Testing filling the square obstacle
+ */
+TEST_F(SquareTest , FillSquareObstacle) {
+  // Arrange
+  std::vector<point> obMap;
+  // Act
+  sq->fillObstacle(obMap);
+  // Assert
+  ASSERT_EQ(obMap.size(), 4);
+}
+
 
 /**
  * @brief Circle class test fixture
@@ -113,6 +126,19 @@ TEST_F(CircleTest , insideOutsideObstacle) {
   ASSERT_EQ(cir->inObstacle(10, 10), false);
   ASSERT_EQ(cir->inObstacle(3, 3), true);
 }
+
+/**
+ * @brief Testing filling the circle obstacle
+ */
+TEST_F(CircleTest , FillCircleObstacle) {
+  // Arrange
+  std::vector<point> obMap;
+  // Act
+  cir->fillObstacle(obMap);
+  // Assert
+  ASSERT_EQ(obMap.size(), 11);
+}
+
 
 /**
  * @brief Obstacle Circle class test fixture for overriding

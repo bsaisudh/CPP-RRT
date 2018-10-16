@@ -21,7 +21,6 @@ class InputMap {
   std::vector<point> configSpace;
 
   InputMap();
-  InputMap(RobotWorkspace &rws);
   void setWorkspace(std::shared_ptr<RobotWorkspace> ws_);
   void addObstacle(std::vector<std::shared_ptr<Obstacle>> &ob_);
   void computeConfigSpace();
