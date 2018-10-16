@@ -7,6 +7,7 @@
 #include "../include/Obstacle.h"
 #include "../include/Square.h"
 #include "../include/Circle.h"
+#include "../include/PathDisplay.h"
 
 using std::vector;
 using std::cout;
@@ -61,5 +62,8 @@ int main() {
   im->setWorkspace(std::move(_ws));
   im->computeConfigSpace();
   im->dispConfigSpace(std::cout);
+  PathDisplay path;
+  path.updateInputMap(std::move(im));
+  path.displayPath(std::cout);
   return 0;
 }

@@ -13,7 +13,7 @@ RRT::RRT() {
 }
 
 bool RRT::isGoal() {
-return false;
+  return false;
 }
 
 void RRT::sampleFromCs() {
@@ -32,8 +32,13 @@ bool RRT::updateSampleSpace() {
   return true;
 }
 
-std::vector<int[2]> RRT::buildPath() {
-  return buildPath();
+std::vector<point> RRT::buildPath() {
+  std::vector<point> path;
+  point p;
+  p.x = 0;
+  p.y = 0;
+  path.emplace_back(p);
+  return path;
 }
 
 RRT::~RRT() {

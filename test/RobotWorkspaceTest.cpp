@@ -70,12 +70,12 @@ TEST(RobotWorkSpaceClass, Initialization) {
  */
 
 TEST_F(RobotWorkspaceTest , ComputeAndGetMethods) {
-  ASSERT_EQ(ws->inWorkspace(5,5), true);
-  ASSERT_EQ(ws->inWorkspace(115,115), false);
-  ASSERT_EQ(ws->isGoal(9,9), true);
-  ASSERT_EQ(ws->isGoal(7,7), false);
-  ASSERT_EQ(ws->isStart(2,2), true);
-  ASSERT_EQ(ws->isStart(3,3), false);
+  ASSERT_EQ(ws->inWorkspace(5, 5), true);
+  ASSERT_EQ(ws->inWorkspace(115, 115), false);
+  ASSERT_EQ(ws->isGoal(9, 9), true);
+  ASSERT_EQ(ws->isGoal(7, 7), false);
+  ASSERT_EQ(ws->isStart(2, 2), true);
+  ASSERT_EQ(ws->isStart(3, 3), false);
   ASSERT_EQ(ws->getmaxX(), 10);
   ASSERT_EQ(ws->getmaxY(), 10);
 }

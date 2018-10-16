@@ -9,14 +9,15 @@
 #define APP_PATHDISPLAY_H_
 
 #include <vector>
+#include <memory>
+#include "../include/InputMap.h"
 
 class PathDisplay {
- private:
-  std::vector<int[2]> path;
-
  public:
+  std::shared_ptr<InputMap> iMap;
   PathDisplay();
-  void displayPath();
+  void updateInputMap(std::shared_ptr<InputMap> _iMap);
+  void displayPath(std::ostream &out);
   virtual ~PathDisplay();
 };
 

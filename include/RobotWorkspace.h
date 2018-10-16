@@ -11,18 +11,17 @@
 #include <iostream>
 
 class RobotWorkspace {
- private:
-  int maxX, maxY;
-  int startX,startY;
-  int goalX ,goalY;
-  bool checkValidity();
  public:
   RobotWorkspace();
+  int maxX, maxY;
+  int startX, startY;
+  int goalX, goalY;
+
   virtual ~RobotWorkspace();
-  void setBoundary(std::istream &in , std::ostream &out);
+  void setBoundary(std::istream &in, std::ostream &out);
   bool inWorkspace(int xCoor, int yCoor);
-  void setStart(std::istream &in , std::ostream &out);
-  void setGoal(std::istream &in , std::ostream &out);
+  void setStart(std::istream &in, std::ostream &out);
+  void setGoal(std::istream &in, std::ostream &out);
   bool isGoal(int xCoor, int yCoor);
   bool isStart(int xCoor, int yCoor);
   void dispWorkspace(std::ostream &out);

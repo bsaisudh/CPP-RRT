@@ -47,8 +47,8 @@ void InputMap::computeConfigSpace() {
   }
 }
 
-void InputMap::dispConfigSpace(std::ostream &out){
-  for(auto &i : configSpace){
+void InputMap::dispConfigSpace(std::ostream &out) {
+  for (auto &i : configSpace) {
     out << "(" << i.x << " , " << i.y << ")" << std::endl;
   }
 }

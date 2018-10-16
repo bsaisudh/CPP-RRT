@@ -2,6 +2,7 @@
  * @file ObstacleTest.cpp
  * @Copyright MIT license
  * Copyright (c) 2018 Bala Murali Manoghar Sai Sudhakar
+ * Copyright (c) 2018 Akshay Rajaraman
  * @author: Bala Murali Manoghar Sai Sudhakar
  * @brief testing obstacle and its derived class
  */
@@ -60,10 +61,9 @@ TEST(SquareClass, Initialization) {
  * @brief Testing if point is inside square obstacle or not
  */
 TEST_F(SquareTest , insideOutsideObstacle) {
-  ASSERT_EQ(sq->inObstacle(10,10),false);
-  ASSERT_EQ(sq->inObstacle(3,3),true);
+  ASSERT_EQ(sq->inObstacle(10, 10), false);
+  ASSERT_EQ(sq->inObstacle(3, 3), true);
 }
-
 
 /**
  * @brief Circle class test fixture
@@ -110,8 +110,8 @@ TEST(CircleClass, Initialization) {
  * @brief Testing if point is inside circle obstacle or not
  */
 TEST_F(CircleTest , insideOutsideObstacle) {
-  ASSERT_EQ(cir->inObstacle(10,10),false);
-  ASSERT_EQ(cir->inObstacle(3,3),true);
+  ASSERT_EQ(cir->inObstacle(10, 10), false);
+  ASSERT_EQ(cir->inObstacle(3, 3), true);
 }
 
 /**
@@ -159,8 +159,8 @@ TEST(ObstacleCircleClass, Initialization) {
  * @brief Testing if point is inside circle obstacle or not through overriding
  */
 TEST_F(ObstacleCircleTest , insideOutsideObstacle) {
-  ASSERT_EQ(ob_cir->inObstacle(10,10),false);
-  ASSERT_EQ(ob_cir->inObstacle(3,3),true);
+  ASSERT_EQ(ob_cir->inObstacle(10, 10), false);
+  ASSERT_EQ(ob_cir->inObstacle(3, 3), true);
 }
 
 /**
@@ -208,7 +208,7 @@ TEST(ObstaclesquareClass, Initialization) {
  * @brief Testing if point is inside circle obstacle or not through overriding
  */
 TEST_F(ObstacleSquareTest , insideOutsideObstacle) {
-  ASSERT_EQ(ob_sq->inObstacle(10,10),false);
-  ASSERT_EQ(ob_sq->inObstacle(3,3),true);
+  ASSERT_EQ(ob_sq->inObstacle(10, 10), false);
+  ASSERT_EQ(ob_sq->inObstacle(3, 3), true);
 }
 
