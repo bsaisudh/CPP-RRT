@@ -17,7 +17,7 @@ bool Square::checkValidity() {
   return true;
 }
 
-void Square::setBoundary(std::istream &in , std::ostream &out) {
+void Square::setBoundary(std::istream &in, std::ostream &out) {
   out << "Enter StartX :";
   in >> startX;
   out << "Enter StartY :";
@@ -28,7 +28,7 @@ void Square::setBoundary(std::istream &in , std::ostream &out) {
 
 void Square::dispBoundary(std::ostream &out) {
   out << "StartX:" << startX << " StartY :" << startY << " Side: " << side
-            << std::endl;
+      << std::endl;
 }
 
 bool Square::inObstacle(int xCoord, int yCoord) {
@@ -40,7 +40,18 @@ bool Square::inObstacle(int xCoord, int yCoord) {
   }
 }
 
+void Square::fillObstacle(std::vector<point> &obMap) {
+  point p;
+  for (auto i = startX; i < startX + side; i++) {
+    for (int j = startX; j < startX + side; j++) {
+      p.x = i;
+      p.y = j;
+      obMap.emplace_back(p);
+    }
+  }
+}
+
 Square::~Square() {
-  // TODO Auto-generated destructor stub
+// TODO Auto-generated destructor stub
 }
 

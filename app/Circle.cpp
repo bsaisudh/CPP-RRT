@@ -43,6 +43,19 @@ bool Circle::inObstacle(int coordX, int coordY) {
   return dist <= radius*radius;
 }
 
+void Circle::fillObstacle(std::vector<point> &obMap) {
+  point p;
+  for (int i = (centerX-radius); i < (centerX+radius); i++) {
+    for (int j = (centerY-radius); j < (centerY+radius); j++) {
+      if(inObstacle(i,j)){
+        p.x = i;
+        p.y = j;
+        obMap.emplace_back(p);
+      }
+    }
+  }
+}
+
 Circle::~Circle() {
 // TODO Auto-generated destructor stub
 }

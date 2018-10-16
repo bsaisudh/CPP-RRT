@@ -23,6 +23,7 @@ class Square : public Obstacle {
   void setBoundary(std::istream &in , std::ostream &out);
   void dispBoundary(std::ostream &out);
   bool inObstacle(int xCoord, int yCoord);
+  void fillObstacle(std::vector<point> &obMap);
   virtual ~Square();
 };
 

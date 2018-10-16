@@ -14,21 +14,17 @@
 
 class RRT {
  private:
-  InputMap Map;
-  int sampledPoint[2];
-  int newPoint[2];
-  std::vector<int[2]> Tree;
-
   bool isGoal();
   void sampleFromCs();
   void addToTree();
   void computeNewPoint();
   bool updateSampleSpace();
-  std::vector<int[2]> buildPath();
-
+  std::vector<point> buildPath();
  public:
+  InputMap Map;
+  std::vector<point> Tree;
   RRT();
-  std::vector<int[2]> computePath();
+  std::vector<point> computePath();
   virtual ~RRT();
 };
 

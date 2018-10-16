@@ -16,13 +16,12 @@
 
 class InputMap {
  private:
-  struct point{
-    int x,y;
-  };
+
+ public:
   std::vector<std::shared_ptr<Obstacle>> ob;
   std::shared_ptr<RobotWorkspace> ws;
   std::vector<point> configSpace;
- public:
+
   InputMap();
   InputMap(RobotWorkspace &rws);
   void setWorkspace(std::shared_ptr<RobotWorkspace> ws_);

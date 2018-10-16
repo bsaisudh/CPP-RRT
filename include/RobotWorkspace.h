@@ -12,12 +12,14 @@
 
 class RobotWorkspace {
  private:
-  int maxX, maxY;
-  int startX,startY;
-  int goalX ,goalY;
+
   bool checkValidity();
  public:
   RobotWorkspace();
+  int maxX, maxY;
+  int startX,startY;
+  int goalX ,goalY;
+
   virtual ~RobotWorkspace();
   void setBoundary(std::istream &in , std::ostream &out);
   bool inWorkspace(int xCoor, int yCoor);
