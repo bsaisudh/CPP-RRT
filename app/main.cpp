@@ -1,6 +1,11 @@
+/*
+ * Copyright Akshay Rajaraman Subramanian, Bala Sai Sudhakar
+ *
+ */
 #include <iostream>
 #include <vector>
 #include <memory>
+#include <utility>
 
 #include "../include/InputMap.h"
 #include "../include/RobotWorkspace.h"
@@ -8,6 +13,7 @@
 #include "../include/Square.h"
 #include "../include/Circle.h"
 #include "../include/PathDisplay.h"
+#include "../include/RRT.h"
 
 using std::vector;
 using std::cout;
@@ -15,7 +21,6 @@ using std::cin;
 using std::endl;
 
 int main() {
-
   std::shared_ptr<RobotWorkspace> _ws(new RobotWorkspace);
   _ws->setBoundary(cin, cout);
   _ws->setStart(cin, cout);
@@ -62,8 +67,11 @@ int main() {
   im->setWorkspace(std::move(_ws));
   im->computeConfigSpace();
   im->dispConfigSpace(std::cout);
-  PathDisplay path;
-  path.updateInputMap(std::move(im));
-  path.displayPath(std::cout);
+  std::shared_ptr<RRT> rrt(new RRT);
+  rrt -> Map = std::move(im);
+  std::vector<point> path = rrt -> buildPath();
+  PathDisplay pathD;
+  pathD.updateInputMap(std::move(im));
+  pathD.displayPath(std::cout);
   return 0;
 }
