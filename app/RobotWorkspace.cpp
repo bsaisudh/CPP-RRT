@@ -17,13 +17,13 @@ RobotWorkspace::RobotWorkspace()
       startX(0),
       startY(0),
       goalX(0),
-      goalY(0){
+      goalY(0) {
 }
 
 RobotWorkspace::~RobotWorkspace() {
 }
 
-void RobotWorkspace::setBoundary(std::istream &in , std::ostream &out) {
+void RobotWorkspace::setBoundary(std::istream &in, std::ostream &out) {
   out << "Enter map max X dimension : ";
   in >> maxX;
   out << "Enter map max y dimension : ";
@@ -38,14 +38,14 @@ bool RobotWorkspace::inWorkspace(int xCoor, int yCoor) {
   }
 }
 
-void RobotWorkspace::setStart(std::istream &in , std::ostream &out) {
+void RobotWorkspace::setStart(std::istream &in, std::ostream &out) {
   out << "Enter start X coordinate : ";
   in >> startX;
   out << "Enter start Y coordinate : ";
   in >> startY;
 }
 
-void RobotWorkspace::setGoal(std::istream &in , std::ostream &out) {
+void RobotWorkspace::setGoal(std::istream &in, std::ostream &out) {
   out << "Enter goal X coordinate : ";
   in >> goalX;
   out << "Enter goal Y coordinate : ";

@@ -16,11 +16,10 @@ class Square : public Obstacle {
   int startX;
   int startY;
   int side;
-  bool checkValidity();
 
  public:
   Square();
-  void setBoundary(std::istream &in , std::ostream &out);
+  void setBoundary(std::istream &in, std::ostream &out);
   void dispBoundary(std::ostream &out);
   bool inObstacle(int xCoord, int yCoord);
   void fillObstacle(std::vector<point> &obMap);

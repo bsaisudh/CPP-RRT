@@ -17,11 +17,10 @@ class Circle : public Obstacle {
   int centerX;
   int centerY;
   int radius;
-  bool checkValidity();
 
  public:
   Circle();
-  void setBoundary(std::istream &in , std::ostream &out);
+  void setBoundary(std::istream &in, std::ostream &out);
   void dispBoundary(std::ostream &out);
   bool inObstacle(int xCoord, int yCoord);
   void fillObstacle(std::vector<point> &obMap);

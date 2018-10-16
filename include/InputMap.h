@@ -15,8 +15,6 @@
 #include "RobotWorkspace.h"
 
 class InputMap {
- private:
-
  public:
   std::vector<std::shared_ptr<Obstacle>> ob;
   std::shared_ptr<RobotWorkspace> ws;

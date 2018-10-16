@@ -13,8 +13,6 @@
 #include "../include/InputMap.h"
 
 class PathDisplay {
- private:
-
  public:
   std::shared_ptr<InputMap> iMap;
   PathDisplay();

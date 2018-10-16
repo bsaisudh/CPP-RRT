@@ -13,10 +13,6 @@ Square::Square()
       side(0) {
 }
 
-bool Square::checkValidity() {
-  return true;
-}
-
 void Square::setBoundary(std::istream &in, std::ostream &out) {
   out << "Enter StartX :";
   in >> startX;

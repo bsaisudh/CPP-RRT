@@ -13,8 +13,8 @@
 #include <iostream>
 #include <vector>
 
-struct point{
-  int x,y;
+struct point {
+  int x, y;
 };
 
 /**
@@ -22,11 +22,9 @@ struct point{
  *
  */
 class Obstacle {
- private:
-
  public:
   Obstacle();
-  virtual void setBoundary(std::istream &in , std::ostream &out) = 0;
+  virtual void setBoundary(std::istream &in, std::ostream &out) = 0;
   virtual void dispBoundary(std::ostream &out) = 0;
   virtual bool inObstacle(int xCoord, int yCoord) = 0;
   virtual void fillObstacle(std::vector<point> &obMap) = 0;

@@ -13,7 +13,7 @@ RRT::RRT() {
 }
 
 bool RRT::isGoal() {
-return false;
+  return false;
 }
 
 void RRT::sampleFromCs() {
