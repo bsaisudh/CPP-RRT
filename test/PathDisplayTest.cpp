@@ -63,7 +63,7 @@ TEST(PathDisplayClass, ConfigSpaceCreation) {
   pathDisp.displayPath(sout,path);
   std::string configSpaceStr = "\n+ + + + + + + + \n"
       "+             + \n"
-      "+   S *       + \n"
+      "+   S         + \n"
       "+     X E     + \n"
       "+             + \n"
       "+             + \n"
