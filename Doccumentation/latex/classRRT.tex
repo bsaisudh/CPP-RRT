@@ -1,0 +1,240 @@
+\hypertarget{classRRT}{}\section{R\+RT Class Reference}
+\label{classRRT}\index{R\+RT@{R\+RT}}
+
+
+Class finds path.  
+
+
+
+
+{\ttfamily \#include $<$R\+R\+T.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classRRT_a536e56c03eaf1249701915a6d349d020}{is\+Goal} ()
+\begin{DoxyCompactList}\small\item\em Checks if a point is goal point of robot. \end{DoxyCompactList}\item 
+void \hyperlink{classRRT_ae4efbc3892eb9dfcb642d28d5a19c7e3}{sample\+From\+Cs} ()
+\begin{DoxyCompactList}\small\item\em Find a random unvisited sample point from configuration space. \end{DoxyCompactList}\item 
+void \hyperlink{classRRT_ab6c1cd83695cb7dc377ca450d63a60d3}{add\+To\+Tree} ()
+\begin{DoxyCompactList}\small\item\em Add point details to tree. \end{DoxyCompactList}\item 
+int \hyperlink{classRRT_aa66da1beaa73a2207673f8dcd5de5289}{compute\+New\+Point} ()
+\begin{DoxyCompactList}\small\item\em Find a new \mbox{[}point nearest to random chosen point. \end{DoxyCompactList}\item 
+bool \hyperlink{classRRT_a632b8a8b4de79fc73b9183bacdc0d350}{update\+Sample\+Space} ()
+\begin{DoxyCompactList}\small\item\em Update sample space to remove the visited point. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{structpoint}{point} $>$ \hyperlink{classRRT_a520e20c364793c033b1bb899d687967c}{build\+Path} ()
+\begin{DoxyCompactList}\small\item\em Compute and build path form start to goal point. \end{DoxyCompactList}\item 
+\hyperlink{classRRT_a0a7bb3a3af2d70c656764fbe8f6ae671}{R\+RT} ()
+\begin{DoxyCompactList}\small\item\em Constructor to initialize all variables. \end{DoxyCompactList}\item 
+virtual \hyperlink{classRRT_ab16d13c231d664dddaf41f904d5770f8}{$\sim$\+R\+RT} ()
+\begin{DoxyCompactList}\small\item\em Gets arena boundary from user and stores the values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classInputMap}{Input\+Map} $>$ \hyperlink{classRRT_a072ade92010a498a1a5158fcef0d9ee9}{Map}
+\item 
+int \hyperlink{classRRT_a85de597c47f635ac1804a7e2c98f717b}{start\+Point} \mbox{[}2\mbox{]}
+\item 
+int \hyperlink{classRRT_acdc27db3967b542df1ebab8da270bd72}{goal\+Point} \mbox{[}2\mbox{]}
+\item 
+int \hyperlink{classRRT_a319220aada572c19cbbd2cfe0eb99c6d}{sampled\+Point} \mbox{[}2\mbox{]}
+\item 
+int \hyperlink{classRRT_a86bebb284bab72fab29824d75f5cb5a1}{new\+Point} \mbox{[}2\mbox{]}
+\item 
+int \hyperlink{classRRT_a93596f78ae0f49d4f54c61ec5b50c2f8}{parent\+Point\+Index}
+\item 
+std\+::vector$<$ std\+::array$<$ int, 4 $>$ $>$ \hyperlink{classRRT_a6ac6f3ad0727baaa8a17a2ee64e5bd2b}{Tree}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class finds path. 
+
+This class finds path from start point to end point using \hyperlink{classRRT}{R\+RT} algorithm 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{R\+RT@{R\+RT}!R\+RT@{R\+RT}}
+\index{R\+RT@{R\+RT}!R\+RT@{R\+RT}}
+\subsubsection[{\texorpdfstring{R\+R\+T()}{RRT()}}]{\setlength{\rightskip}{0pt plus 5cm}R\+R\+T\+::\+R\+RT (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classRRT_a0a7bb3a3af2d70c656764fbe8f6ae671}{}\label{classRRT_a0a7bb3a3af2d70c656764fbe8f6ae671}
+
+
+Constructor to initialize all variables. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\index{R\+RT@{R\+RT}!````~R\+RT@{$\sim$\+R\+RT}}
+\index{````~R\+RT@{$\sim$\+R\+RT}!R\+RT@{R\+RT}}
+\subsubsection[{\texorpdfstring{$\sim$\+R\+R\+T()}{~RRT()}}]{\setlength{\rightskip}{0pt plus 5cm}R\+R\+T\+::$\sim$\+R\+RT (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classRRT_ab16d13c231d664dddaf41f904d5770f8}{}\label{classRRT_ab16d13c231d664dddaf41f904d5770f8}
+
+
+Gets arena boundary from user and stores the values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Input} & and output stream references \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{R\+RT@{R\+RT}!add\+To\+Tree@{add\+To\+Tree}}
+\index{add\+To\+Tree@{add\+To\+Tree}!R\+RT@{R\+RT}}
+\subsubsection[{\texorpdfstring{add\+To\+Tree()}{addToTree()}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+R\+T\+::add\+To\+Tree (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classRRT_ab6c1cd83695cb7dc377ca450d63a60d3}{}\label{classRRT_ab6c1cd83695cb7dc377ca450d63a60d3}
+
+
+Add point details to tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\index{R\+RT@{R\+RT}!build\+Path@{build\+Path}}
+\index{build\+Path@{build\+Path}!R\+RT@{R\+RT}}
+\subsubsection[{\texorpdfstring{build\+Path()}{buildPath()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf point} $>$ R\+R\+T\+::build\+Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classRRT_a520e20c364793c033b1bb899d687967c}{}\label{classRRT_a520e20c364793c033b1bb899d687967c}
+
+
+Compute and build path form start to goal point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector containing points on path 
+\end{DoxyReturn}
+\index{R\+RT@{R\+RT}!compute\+New\+Point@{compute\+New\+Point}}
+\index{compute\+New\+Point@{compute\+New\+Point}!R\+RT@{R\+RT}}
+\subsubsection[{\texorpdfstring{compute\+New\+Point()}{computeNewPoint()}}]{\setlength{\rightskip}{0pt plus 5cm}int R\+R\+T\+::compute\+New\+Point (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classRRT_aa66da1beaa73a2207673f8dcd5de5289}{}\label{classRRT_aa66da1beaa73a2207673f8dcd5de5289}
+
+
+Find a new \mbox{[}point nearest to random chosen point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Integer representing index if the point iin tree 
+\end{DoxyReturn}
+\index{R\+RT@{R\+RT}!is\+Goal@{is\+Goal}}
+\index{is\+Goal@{is\+Goal}!R\+RT@{R\+RT}}
+\subsubsection[{\texorpdfstring{is\+Goal()}{isGoal()}}]{\setlength{\rightskip}{0pt plus 5cm}bool R\+R\+T\+::is\+Goal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classRRT_a536e56c03eaf1249701915a6d349d020}{}\label{classRRT_a536e56c03eaf1249701915a6d349d020}
+
+
+Checks if a point is goal point of robot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True or False depending on the result 
+\end{DoxyReturn}
+\index{R\+RT@{R\+RT}!sample\+From\+Cs@{sample\+From\+Cs}}
+\index{sample\+From\+Cs@{sample\+From\+Cs}!R\+RT@{R\+RT}}
+\subsubsection[{\texorpdfstring{sample\+From\+Cs()}{sampleFromCs()}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+R\+T\+::sample\+From\+Cs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classRRT_ae4efbc3892eb9dfcb642d28d5a19c7e3}{}\label{classRRT_ae4efbc3892eb9dfcb642d28d5a19c7e3}
+
+
+Find a random unvisited sample point from configuration space. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\index{R\+RT@{R\+RT}!update\+Sample\+Space@{update\+Sample\+Space}}
+\index{update\+Sample\+Space@{update\+Sample\+Space}!R\+RT@{R\+RT}}
+\subsubsection[{\texorpdfstring{update\+Sample\+Space()}{updateSampleSpace()}}]{\setlength{\rightskip}{0pt plus 5cm}bool R\+R\+T\+::update\+Sample\+Space (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classRRT_a632b8a8b4de79fc73b9183bacdc0d350}{}\label{classRRT_a632b8a8b4de79fc73b9183bacdc0d350}
+
+
+Update sample space to remove the visited point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True or False depending on whether there is more points to visit or not 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{R\+RT@{R\+RT}!goal\+Point@{goal\+Point}}
+\index{goal\+Point@{goal\+Point}!R\+RT@{R\+RT}}
+\subsubsection[{\texorpdfstring{goal\+Point}{goalPoint}}]{\setlength{\rightskip}{0pt plus 5cm}int R\+R\+T\+::goal\+Point\mbox{[}2\mbox{]}}\hypertarget{classRRT_acdc27db3967b542df1ebab8da270bd72}{}\label{classRRT_acdc27db3967b542df1ebab8da270bd72}
+\index{R\+RT@{R\+RT}!Map@{Map}}
+\index{Map@{Map}!R\+RT@{R\+RT}}
+\subsubsection[{\texorpdfstring{Map}{Map}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf Input\+Map}$>$ R\+R\+T\+::\+Map}\hypertarget{classRRT_a072ade92010a498a1a5158fcef0d9ee9}{}\label{classRRT_a072ade92010a498a1a5158fcef0d9ee9}
+\index{R\+RT@{R\+RT}!new\+Point@{new\+Point}}
+\index{new\+Point@{new\+Point}!R\+RT@{R\+RT}}
+\subsubsection[{\texorpdfstring{new\+Point}{newPoint}}]{\setlength{\rightskip}{0pt plus 5cm}int R\+R\+T\+::new\+Point\mbox{[}2\mbox{]}}\hypertarget{classRRT_a86bebb284bab72fab29824d75f5cb5a1}{}\label{classRRT_a86bebb284bab72fab29824d75f5cb5a1}
+\index{R\+RT@{R\+RT}!parent\+Point\+Index@{parent\+Point\+Index}}
+\index{parent\+Point\+Index@{parent\+Point\+Index}!R\+RT@{R\+RT}}
+\subsubsection[{\texorpdfstring{parent\+Point\+Index}{parentPointIndex}}]{\setlength{\rightskip}{0pt plus 5cm}int R\+R\+T\+::parent\+Point\+Index}\hypertarget{classRRT_a93596f78ae0f49d4f54c61ec5b50c2f8}{}\label{classRRT_a93596f78ae0f49d4f54c61ec5b50c2f8}
+\index{R\+RT@{R\+RT}!sampled\+Point@{sampled\+Point}}
+\index{sampled\+Point@{sampled\+Point}!R\+RT@{R\+RT}}
+\subsubsection[{\texorpdfstring{sampled\+Point}{sampledPoint}}]{\setlength{\rightskip}{0pt plus 5cm}int R\+R\+T\+::sampled\+Point\mbox{[}2\mbox{]}}\hypertarget{classRRT_a319220aada572c19cbbd2cfe0eb99c6d}{}\label{classRRT_a319220aada572c19cbbd2cfe0eb99c6d}
+\index{R\+RT@{R\+RT}!start\+Point@{start\+Point}}
+\index{start\+Point@{start\+Point}!R\+RT@{R\+RT}}
+\subsubsection[{\texorpdfstring{start\+Point}{startPoint}}]{\setlength{\rightskip}{0pt plus 5cm}int R\+R\+T\+::start\+Point\mbox{[}2\mbox{]}}\hypertarget{classRRT_a85de597c47f635ac1804a7e2c98f717b}{}\label{classRRT_a85de597c47f635ac1804a7e2c98f717b}
+\index{R\+RT@{R\+RT}!Tree@{Tree}}
+\index{Tree@{Tree}!R\+RT@{R\+RT}}
+\subsubsection[{\texorpdfstring{Tree}{Tree}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::array$<$int, 4$>$ $>$ R\+R\+T\+::\+Tree}\hypertarget{classRRT_a6ac6f3ad0727baaa8a17a2ee64e5bd2b}{}\label{classRRT_a6ac6f3ad0727baaa8a17a2ee64e5bd2b}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/bala/workspace/\+Midterm project/\+C\+P\+P-\/\+R\+R\+T/include/\hyperlink{RRT_8h}{R\+R\+T.\+h}\item 
+/home/bala/workspace/\+Midterm project/\+C\+P\+P-\/\+R\+R\+T/app/\hyperlink{RRT_8cpp}{R\+R\+T.\+cpp}\end{DoxyCompactItemize}

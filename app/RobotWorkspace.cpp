@@ -36,8 +36,10 @@ void RobotWorkspace::setBoundary(std::istream &in, std::ostream &out) {
 
 bool RobotWorkspace::inWorkspace(int xCoor, int yCoor) {
   if (xCoor < maxX && xCoor > 0 && yCoor < maxY && yCoor > 0) {
+    // Point in inside obstacle
     return true;
   } else {
+    // Point is outside obstacle
     return false;
   }
 }
@@ -57,10 +59,12 @@ void RobotWorkspace::setGoal(std::istream &in, std::ostream &out) {
 }
 
 bool RobotWorkspace::isGoal(int xCoor, int yCoor) {
+  // Return true of point is goal
   return (xCoor == goalX && yCoor == goalY);
 }
 
 bool RobotWorkspace::isStart(int xCoor, int yCoor) {
+  // Return true of point is start
   return (xCoor == startX && yCoor == startY);
 }
 

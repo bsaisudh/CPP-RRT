@@ -16,6 +16,7 @@
 
 /**
  * @brief Structure to hold x and y co-odinates of point.
+ * @struct Structure to hold x and y co-odinates of point.
  */
 struct point {
   int x, y;

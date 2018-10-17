@@ -1,4 +1,3 @@
-
 /*
  * @file Square.h
  * @Copyright MIT license
@@ -17,18 +16,51 @@
 
 #include "Obstacle.h"
 
+/**
+ * @brief Square class that holds functions of Square obstacle.
+ */
 class Square : public Obstacle {
  private:
-  int startX;
-  int startY;
-  int side;
+  int startX;   // !<X co-ordinate of start point
+  int startY;   // !<Y co-ordinate of start point
+  int side;     // !<Side length
 
  public:
+  /**
+   * @brief Constructor to initialize all variables for obstacle class
+   * @param None
+   * @return None
+   */
   Square();
+  /**
+   * @brief Gets boundary of square obstacle form user and updates the object
+   * @param Input and output stream
+   * @return None
+   */
   void setBoundary(std::istream &in, std::ostream &out);
+  /**
+   * @brief Display the square obstacle boundary points to user that has given
+   * @param Output stream
+   * @return input stream
+   */
   void dispBoundary(std::ostream &out);
+  /**
+   * @brief Checks if the point is inside the circle obstacle
+   * @param X and y coordinates for the point to be checked
+   * @return True if the point is inside obstacle else false
+   */
   bool inObstacle(int xCoord, int yCoord);
+  /**
+   * @brief Finds all points in circle obstacle
+   * @param Vector to hold all points of obstacle
+   * @return None
+   */
   void fillObstacle(std::vector<point> &obMap);
+  /**
+   * @brief Destructor to free up space once object goes out of scope
+   * @param None
+   * @return None
+   */
   virtual ~Square();
 };
 

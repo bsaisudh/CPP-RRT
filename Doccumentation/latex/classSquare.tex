@@ -1,0 +1,193 @@
+\hypertarget{classSquare}{}\section{Square Class Reference}
+\label{classSquare}\index{Square@{Square}}
+
+
+\hyperlink{classSquare}{Square} class that holds functions of \hyperlink{classSquare}{Square} obstacle.  
+
+
+
+
+{\ttfamily \#include $<$Square.\+h$>$}
+
+
+
+Inheritance diagram for Square\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=136pt]{classSquare__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Square\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=136pt]{classSquare__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSquare_a3dc7ff9aefc2725172b5d3153973d243}{Square} ()
+\begin{DoxyCompactList}\small\item\em Constructor to initialize all variables for obstacle class. \end{DoxyCompactList}\item 
+void \hyperlink{classSquare_a1979921c7ae05d518c4392e0d5b8c156}{set\+Boundary} (std\+::istream \&in, std\+::ostream \&out)
+\begin{DoxyCompactList}\small\item\em Gets boundary of square obstacle form user and updates the object. \end{DoxyCompactList}\item 
+void \hyperlink{classSquare_afb76b9979da299090aa92f7e02465843}{disp\+Boundary} (std\+::ostream \&out)
+\begin{DoxyCompactList}\small\item\em Display the square obstacle boundary points to user that has given. \end{DoxyCompactList}\item 
+bool \hyperlink{classSquare_aa07ba26ea5675fea6dc90b2172ab13dd}{in\+Obstacle} (int x\+Coord, int y\+Coord)
+\begin{DoxyCompactList}\small\item\em Checks if the point is inside the circle obstacle. \end{DoxyCompactList}\item 
+void \hyperlink{classSquare_a395dc9319c9609d810e3f22eddbdcc81}{fill\+Obstacle} (std\+::vector$<$ \hyperlink{structpoint}{point} $>$ \&ob\+Map)
+\begin{DoxyCompactList}\small\item\em Finds all points in circle obstacle. \end{DoxyCompactList}\item 
+virtual \hyperlink{classSquare_a90af7ce1060cff7b717ceddb333846b8}{$\sim$\+Square} ()
+\begin{DoxyCompactList}\small\item\em Destructor to free up space once object goes out of scope. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classSquare}{Square} class that holds functions of \hyperlink{classSquare}{Square} obstacle. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Square@{Square}!Square@{Square}}
+\index{Square@{Square}!Square@{Square}}
+\subsubsection[{\texorpdfstring{Square()}{Square()}}]{\setlength{\rightskip}{0pt plus 5cm}Square\+::\+Square (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classSquare_a3dc7ff9aefc2725172b5d3153973d243}{}\label{classSquare_a3dc7ff9aefc2725172b5d3153973d243}
+
+
+Constructor to initialize all variables for obstacle class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\index{Square@{Square}!````~Square@{$\sim$\+Square}}
+\index{````~Square@{$\sim$\+Square}!Square@{Square}}
+\subsubsection[{\texorpdfstring{$\sim$\+Square()}{~Square()}}]{\setlength{\rightskip}{0pt plus 5cm}Square\+::$\sim$\+Square (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classSquare_a90af7ce1060cff7b717ceddb333846b8}{}\label{classSquare_a90af7ce1060cff7b717ceddb333846b8}
+
+
+Destructor to free up space once object goes out of scope. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Square@{Square}!disp\+Boundary@{disp\+Boundary}}
+\index{disp\+Boundary@{disp\+Boundary}!Square@{Square}}
+\subsubsection[{\texorpdfstring{disp\+Boundary(std\+::ostream \&out)}{dispBoundary(std::ostream &out)}}]{\setlength{\rightskip}{0pt plus 5cm}void Square\+::disp\+Boundary (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{out}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classSquare_afb76b9979da299090aa92f7e02465843}{}\label{classSquare_afb76b9979da299090aa92f7e02465843}
+
+
+Display the square obstacle boundary points to user that has given. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Output} & stream \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+input stream 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classObstacle_aba2625490b7d32632d585198038d279a}{Obstacle}.
+
+\index{Square@{Square}!fill\+Obstacle@{fill\+Obstacle}}
+\index{fill\+Obstacle@{fill\+Obstacle}!Square@{Square}}
+\subsubsection[{\texorpdfstring{fill\+Obstacle(std\+::vector$<$ point $>$ \&ob\+Map)}{fillObstacle(std::vector< point > &obMap)}}]{\setlength{\rightskip}{0pt plus 5cm}void Square\+::fill\+Obstacle (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf point} $>$ \&}]{ob\+Map}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classSquare_a395dc9319c9609d810e3f22eddbdcc81}{}\label{classSquare_a395dc9319c9609d810e3f22eddbdcc81}
+
+
+Finds all points in circle obstacle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Vector} & to hold all points of obstacle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classObstacle_ade69ded6cb0d58ff914e64aaef4a0464}{Obstacle}.
+
+\index{Square@{Square}!in\+Obstacle@{in\+Obstacle}}
+\index{in\+Obstacle@{in\+Obstacle}!Square@{Square}}
+\subsubsection[{\texorpdfstring{in\+Obstacle(int x\+Coord, int y\+Coord)}{inObstacle(int xCoord, int yCoord)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Square\+::in\+Obstacle (
+\begin{DoxyParamCaption}
+\item[{int}]{x\+Coord, }
+\item[{int}]{y\+Coord}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classSquare_aa07ba26ea5675fea6dc90b2172ab13dd}{}\label{classSquare_aa07ba26ea5675fea6dc90b2172ab13dd}
+
+
+Checks if the point is inside the circle obstacle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em X} & and y coordinates for the point to be checked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the point is inside obstacle else false 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classObstacle_a52c373a98616f6c41058f725b73479f5}{Obstacle}.
+
+\index{Square@{Square}!set\+Boundary@{set\+Boundary}}
+\index{set\+Boundary@{set\+Boundary}!Square@{Square}}
+\subsubsection[{\texorpdfstring{set\+Boundary(std\+::istream \&in, std\+::ostream \&out)}{setBoundary(std::istream &in, std::ostream &out)}}]{\setlength{\rightskip}{0pt plus 5cm}void Square\+::set\+Boundary (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{in, }
+\item[{std\+::ostream \&}]{out}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classSquare_a1979921c7ae05d518c4392e0d5b8c156}{}\label{classSquare_a1979921c7ae05d518c4392e0d5b8c156}
+
+
+Gets boundary of square obstacle form user and updates the object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Input} & and output stream \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classObstacle_a8915ad90dc24f48df3ff0c38e8c695aa}{Obstacle}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/bala/workspace/\+Midterm project/\+C\+P\+P-\/\+R\+R\+T/include/\hyperlink{Square_8h}{Square.\+h}\item 
+/home/bala/workspace/\+Midterm project/\+C\+P\+P-\/\+R\+R\+T/app/\hyperlink{Square_8cpp}{Square.\+cpp}\end{DoxyCompactItemize}

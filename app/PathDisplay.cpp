@@ -17,10 +17,12 @@ PathDisplay::PathDisplay() {
 }
 
 void PathDisplay::updateInputMap(std::shared_ptr<InputMap> _iMap) {
+  // !< Move Input map object shared reference inside class
   iMap = std::move(_iMap);
 }
 
 void PathDisplay::displayPath(std::ostream &out, std::vector<point> &path) {
+  // <!<Array representing robot map with obstacles and path
   char map[iMap->ws->maxX + 2][iMap->ws->maxY + 2];
   // Fill with spaces
   for (int i = 0; i < iMap->ws->maxX + 2; i++) {

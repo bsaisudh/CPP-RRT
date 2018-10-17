@@ -8,6 +8,50 @@
  * @brief Demo for RRT Algorithm
  */
 
+/*! \mainpage RRT algorithm implemented in C++ using oops concepts
+ *
+ * \section Overview
+ *
+ *Path planning for a point robot using Rapidly Exploring Random Trees (RRT)
+ *on a known 2D space.
+ *The algorithm returns coordinate points in the path,
+ *which when interfaced with a simple position control
+ *system can be used to drive a robot in the planned path.
+ *Path RRTs are kinodynamic planners that can be used to
+ *calculate the trajectory of a robot in real time
+ *Given that the algorithm uses incremental motions,
+ *it can be used in Collision detection.
+ *The RRT algorithm can be used to produce good guesses
+ *for variational optimization techniques.
+ *
+ * \section RRT ALGORITHM
+ * 1.Sample a random point from the configuration space.
+ * 2.Obtain a point on the tree closest to the sampled point,
+ *    in the direction of the point at a unit distance.
+ * 3.Verify if this point is in contact with any obstacle.
+ * 4.If the new point is not in contact with or within any obstacles
+ *    then add this point to the tree.
+ * 5.If the new point is in contact with or within any obstacles,
+ *    then add the point closest to the tree that is just outside the obstacle to the tree.
+ * 6.The points added to the tree are removed from the sampling space.
+ * 7.This is recursively performed till the point within unit distance
+ *    of the goal point is reached.
+ *
+ * \section Project Specifics
+ * Programming Language - C++
+ * Build Platform – Make, GCC Compiler
+ * Source code control - GIT and GitHub
+ * Build testing – Travis CI
+ * Test coverage - Coveralls
+ *
+ * \section Agile Process
+ * [Sheet Link](https://docs.google.com/spreadsheets/d/1cJVLNv9pZ2T4a17OsMPn_WnxRS6tAkfYJKaMcSRo6MA/edit?usp=sharing)
+ *
+ * \section Class Diagram
+ * \image html ..\UML\Revised\classDescriptions.png
+ */
+
+
 #include <iostream>
 #include <vector>
 #include <memory>

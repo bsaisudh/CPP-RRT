@@ -1,0 +1,183 @@
+\hypertarget{classObstacle}{}\section{Obstacle Class Reference}
+\label{classObstacle}\index{Obstacle@{Obstacle}}
+
+
+\hyperlink{classObstacle}{Obstacle} obstacle class that serves as parent for all types of obstacles.  
+
+
+
+
+{\ttfamily \#include $<$Obstacle.\+h$>$}
+
+
+
+Inheritance diagram for Obstacle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classObstacle__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classObstacle_a8f734072321fa06a7b7dae2d5f50f352}{Obstacle} ()
+\begin{DoxyCompactList}\small\item\em Constructor to initialize all variables for obstacle class. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classObstacle_a8915ad90dc24f48df3ff0c38e8c695aa}{set\+Boundary} (std\+::istream \&in, std\+::ostream \&out)=0
+\begin{DoxyCompactList}\small\item\em Virtual function that gets boundary of obstacle form user and updates the object. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classObstacle_aba2625490b7d32632d585198038d279a}{disp\+Boundary} (std\+::ostream \&out)=0
+\begin{DoxyCompactList}\small\item\em Virtual function to display the obstacle boundary points to user that has given. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classObstacle_a52c373a98616f6c41058f725b73479f5}{in\+Obstacle} (int x\+Coord, int y\+Coord)=0
+\begin{DoxyCompactList}\small\item\em Finds all points in obstacle. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classObstacle_ade69ded6cb0d58ff914e64aaef4a0464}{fill\+Obstacle} (std\+::vector$<$ \hyperlink{structpoint}{point} $>$ \&ob\+Map)=0
+\begin{DoxyCompactList}\small\item\em Virtual function to find all points in obstacle. \end{DoxyCompactList}\item 
+virtual \hyperlink{classObstacle_af2f9cc9c6cff75dca0974fd5ac4f71a9}{$\sim$\+Obstacle} ()
+\begin{DoxyCompactList}\small\item\em Destructor to free up space once object goes out of scope. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classObstacle}{Obstacle} obstacle class that serves as parent for all types of obstacles. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Obstacle@{Obstacle}!Obstacle@{Obstacle}}
+\index{Obstacle@{Obstacle}!Obstacle@{Obstacle}}
+\subsubsection[{\texorpdfstring{Obstacle()}{Obstacle()}}]{\setlength{\rightskip}{0pt plus 5cm}Obstacle\+::\+Obstacle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classObstacle_a8f734072321fa06a7b7dae2d5f50f352}{}\label{classObstacle_a8f734072321fa06a7b7dae2d5f50f352}
+
+
+Constructor to initialize all variables for obstacle class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\index{Obstacle@{Obstacle}!````~Obstacle@{$\sim$\+Obstacle}}
+\index{````~Obstacle@{$\sim$\+Obstacle}!Obstacle@{Obstacle}}
+\subsubsection[{\texorpdfstring{$\sim$\+Obstacle()}{~Obstacle()}}]{\setlength{\rightskip}{0pt plus 5cm}Obstacle\+::$\sim$\+Obstacle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classObstacle_af2f9cc9c6cff75dca0974fd5ac4f71a9}{}\label{classObstacle_af2f9cc9c6cff75dca0974fd5ac4f71a9}
+
+
+Destructor to free up space once object goes out of scope. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Obstacle@{Obstacle}!disp\+Boundary@{disp\+Boundary}}
+\index{disp\+Boundary@{disp\+Boundary}!Obstacle@{Obstacle}}
+\subsubsection[{\texorpdfstring{disp\+Boundary(std\+::ostream \&out)=0}{dispBoundary(std::ostream &out)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Obstacle\+::disp\+Boundary (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{out}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classObstacle_aba2625490b7d32632d585198038d279a}{}\label{classObstacle_aba2625490b7d32632d585198038d279a}
+
+
+Virtual function to display the obstacle boundary points to user that has given. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Output} & stream \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+input stream 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classCircle_a4c8e70958920c83bffcf316e3f3245b0}{Circle}, and \hyperlink{classSquare_afb76b9979da299090aa92f7e02465843}{Square}.
+
+\index{Obstacle@{Obstacle}!fill\+Obstacle@{fill\+Obstacle}}
+\index{fill\+Obstacle@{fill\+Obstacle}!Obstacle@{Obstacle}}
+\subsubsection[{\texorpdfstring{fill\+Obstacle(std\+::vector$<$ point $>$ \&ob\+Map)=0}{fillObstacle(std::vector< point > &obMap)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Obstacle\+::fill\+Obstacle (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf point} $>$ \&}]{ob\+Map}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classObstacle_ade69ded6cb0d58ff914e64aaef4a0464}{}\label{classObstacle_ade69ded6cb0d58ff914e64aaef4a0464}
+
+
+Virtual function to find all points in obstacle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Vector} & to hold all points of obstacle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classCircle_a9e6224627d024141c53262844230fcbd}{Circle}, and \hyperlink{classSquare_a395dc9319c9609d810e3f22eddbdcc81}{Square}.
+
+\index{Obstacle@{Obstacle}!in\+Obstacle@{in\+Obstacle}}
+\index{in\+Obstacle@{in\+Obstacle}!Obstacle@{Obstacle}}
+\subsubsection[{\texorpdfstring{in\+Obstacle(int x\+Coord, int y\+Coord)=0}{inObstacle(int xCoord, int yCoord)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Obstacle\+::in\+Obstacle (
+\begin{DoxyParamCaption}
+\item[{int}]{x\+Coord, }
+\item[{int}]{y\+Coord}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classObstacle_a52c373a98616f6c41058f725b73479f5}{}\label{classObstacle_a52c373a98616f6c41058f725b73479f5}
+
+
+Finds all points in obstacle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Vector} & to hold all points of obstacle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classCircle_ab2f11acd5263f4918b43608bc8eeb076}{Circle}, and \hyperlink{classSquare_aa07ba26ea5675fea6dc90b2172ab13dd}{Square}.
+
+\index{Obstacle@{Obstacle}!set\+Boundary@{set\+Boundary}}
+\index{set\+Boundary@{set\+Boundary}!Obstacle@{Obstacle}}
+\subsubsection[{\texorpdfstring{set\+Boundary(std\+::istream \&in, std\+::ostream \&out)=0}{setBoundary(std::istream &in, std::ostream &out)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Obstacle\+::set\+Boundary (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{in, }
+\item[{std\+::ostream \&}]{out}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classObstacle_a8915ad90dc24f48df3ff0c38e8c695aa}{}\label{classObstacle_a8915ad90dc24f48df3ff0c38e8c695aa}
+
+
+Virtual function that gets boundary of obstacle form user and updates the object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Input} & and output stream \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classCircle_ad74925eb7a24bebd81cbef04ee174e6e}{Circle}, and \hyperlink{classSquare_a1979921c7ae05d518c4392e0d5b8c156}{Square}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/bala/workspace/\+Midterm project/\+C\+P\+P-\/\+R\+R\+T/include/\hyperlink{Obstacle_8h}{Obstacle.\+h}\item 
+/home/bala/workspace/\+Midterm project/\+C\+P\+P-\/\+R\+R\+T/app/\hyperlink{Obstacle_8cpp}{Obstacle.\+cpp}\end{DoxyCompactItemize}

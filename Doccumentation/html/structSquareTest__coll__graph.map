@@ -1,0 +1,4 @@
+<map id="SquareTest" name="SquareTest">
+<area shape="rect" id="node3" href="$classSquare.html" title="Square class that holds functions of Square obstacle. " alt="" coords="78,81,141,108"/>
+<area shape="rect" id="node4" href="$classObstacle.html" title="Obstacle obstacle class that serves as parent for all types of obstacles. " alt="" coords="72,5,147,32"/>
+</map>

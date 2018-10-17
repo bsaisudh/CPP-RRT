@@ -1,0 +1,178 @@
+\hypertarget{classInputMap}{}\section{Input\+Map Class Reference}
+\label{classInputMap}\index{Input\+Map@{Input\+Map}}
+
+
+Class holds map properties.  
+
+
+
+
+{\ttfamily \#include $<$Input\+Map.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classInputMap_aa79c436a267244b2151a564a56ac8b38}{Input\+Map} ()
+\begin{DoxyCompactList}\small\item\em Constructor to initialize all variables. \end{DoxyCompactList}\item 
+void \hyperlink{classInputMap_a5a60fff36f356c56c3787ffd1f7c05a2}{set\+Workspace} (std\+::shared\+\_\+ptr$<$ \hyperlink{classRobotWorkspace}{Robot\+Workspace} $>$ ws\+\_\+)
+\begin{DoxyCompactList}\small\item\em Gets workspace parameters from user. \end{DoxyCompactList}\item 
+void \hyperlink{classInputMap_a7a9eebead6fa8ebf4967c67c4b40db97}{add\+Obstacle} (std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classObstacle}{Obstacle} $>$$>$ \&ob\+\_\+)
+\begin{DoxyCompactList}\small\item\em Adds all obstacles to inputmap object. \end{DoxyCompactList}\item 
+void \hyperlink{classInputMap_a156a93dc41197c553f85e1b3634298ed}{compute\+Config\+Space} ()
+\begin{DoxyCompactList}\small\item\em Compute free spaces in workspace. \end{DoxyCompactList}\item 
+void \hyperlink{classInputMap_a98e7e9db9901085b4c3796a3e4757eff}{disp\+Config\+Space} (std\+::ostream \&out)
+\begin{DoxyCompactList}\small\item\em Displays configuration points to user. \end{DoxyCompactList}\item 
+virtual \hyperlink{classInputMap_a6f246c9507a85fd0ea168f5c72a2912e}{$\sim$\+Input\+Map} ()
+\begin{DoxyCompactList}\small\item\em Destructor to free up space once object goes out of scope. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classObstacle}{Obstacle} $>$ $>$ \hyperlink{classInputMap_af0905398b4d3281f9876ff27350f9c3b}{ob}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classRobotWorkspace}{Robot\+Workspace} $>$ \hyperlink{classInputMap_aea6d53c88c8c0353dd7dc44fd295e256}{ws}
+\item 
+std\+::vector$<$ \hyperlink{structpoint}{point} $>$ \hyperlink{classInputMap_a2de100d8c53620d90aae543617a4e986}{config\+Space}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class holds map properties. 
+
+Map properties like obstacles, start point, goal point are stored here 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Input\+Map@{Input\+Map}!Input\+Map@{Input\+Map}}
+\index{Input\+Map@{Input\+Map}!Input\+Map@{Input\+Map}}
+\subsubsection[{\texorpdfstring{Input\+Map()}{InputMap()}}]{\setlength{\rightskip}{0pt plus 5cm}Input\+Map\+::\+Input\+Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classInputMap_aa79c436a267244b2151a564a56ac8b38}{}\label{classInputMap_aa79c436a267244b2151a564a56ac8b38}
+
+
+Constructor to initialize all variables. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\index{Input\+Map@{Input\+Map}!````~Input\+Map@{$\sim$\+Input\+Map}}
+\index{````~Input\+Map@{$\sim$\+Input\+Map}!Input\+Map@{Input\+Map}}
+\subsubsection[{\texorpdfstring{$\sim$\+Input\+Map()}{~InputMap()}}]{\setlength{\rightskip}{0pt plus 5cm}Input\+Map\+::$\sim$\+Input\+Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classInputMap_a6f246c9507a85fd0ea168f5c72a2912e}{}\label{classInputMap_a6f246c9507a85fd0ea168f5c72a2912e}
+
+
+Destructor to free up space once object goes out of scope. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Input\+Map@{Input\+Map}!add\+Obstacle@{add\+Obstacle}}
+\index{add\+Obstacle@{add\+Obstacle}!Input\+Map@{Input\+Map}}
+\subsubsection[{\texorpdfstring{add\+Obstacle(std\+::vector$<$ std\+::shared\+\_\+ptr$<$ Obstacle $>$$>$ \&ob\+\_\+)}{addObstacle(std::vector< std::shared_ptr< Obstacle >> &ob_)}}]{\setlength{\rightskip}{0pt plus 5cm}void Input\+Map\+::add\+Obstacle (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::shared\+\_\+ptr$<$ {\bf Obstacle} $>$$>$ \&}]{ob\+\_\+}
+\end{DoxyParamCaption}
+)}\hypertarget{classInputMap_a7a9eebead6fa8ebf4967c67c4b40db97}{}\label{classInputMap_a7a9eebead6fa8ebf4967c67c4b40db97}
+
+
+Adds all obstacles to inputmap object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Vector} & of obstacles \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\index{Input\+Map@{Input\+Map}!compute\+Config\+Space@{compute\+Config\+Space}}
+\index{compute\+Config\+Space@{compute\+Config\+Space}!Input\+Map@{Input\+Map}}
+\subsubsection[{\texorpdfstring{compute\+Config\+Space()}{computeConfigSpace()}}]{\setlength{\rightskip}{0pt plus 5cm}void Input\+Map\+::compute\+Config\+Space (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classInputMap_a156a93dc41197c553f85e1b3634298ed}{}\label{classInputMap_a156a93dc41197c553f85e1b3634298ed}
+
+
+Compute free spaces in workspace. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\index{Input\+Map@{Input\+Map}!disp\+Config\+Space@{disp\+Config\+Space}}
+\index{disp\+Config\+Space@{disp\+Config\+Space}!Input\+Map@{Input\+Map}}
+\subsubsection[{\texorpdfstring{disp\+Config\+Space(std\+::ostream \&out)}{dispConfigSpace(std::ostream &out)}}]{\setlength{\rightskip}{0pt plus 5cm}void Input\+Map\+::disp\+Config\+Space (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{out}
+\end{DoxyParamCaption}
+)}\hypertarget{classInputMap_a98e7e9db9901085b4c3796a3e4757eff}{}\label{classInputMap_a98e7e9db9901085b4c3796a3e4757eff}
+
+
+Displays configuration points to user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Output} & stream reference \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\index{Input\+Map@{Input\+Map}!set\+Workspace@{set\+Workspace}}
+\index{set\+Workspace@{set\+Workspace}!Input\+Map@{Input\+Map}}
+\subsubsection[{\texorpdfstring{set\+Workspace(std\+::shared\+\_\+ptr$<$ Robot\+Workspace $>$ ws\+\_\+)}{setWorkspace(std::shared_ptr< RobotWorkspace > ws_)}}]{\setlength{\rightskip}{0pt plus 5cm}void Input\+Map\+::set\+Workspace (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf Robot\+Workspace} $>$}]{ws\+\_\+}
+\end{DoxyParamCaption}
+)}\hypertarget{classInputMap_a5a60fff36f356c56c3787ffd1f7c05a2}{}\label{classInputMap_a5a60fff36f356c56c3787ffd1f7c05a2}
+
+
+Gets workspace parameters from user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shared} & pointer to workspace objec \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Input\+Map@{Input\+Map}!config\+Space@{config\+Space}}
+\index{config\+Space@{config\+Space}!Input\+Map@{Input\+Map}}
+\subsubsection[{\texorpdfstring{config\+Space}{configSpace}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf point}$>$ Input\+Map\+::config\+Space}\hypertarget{classInputMap_a2de100d8c53620d90aae543617a4e986}{}\label{classInputMap_a2de100d8c53620d90aae543617a4e986}
+\index{Input\+Map@{Input\+Map}!ob@{ob}}
+\index{ob@{ob}!Input\+Map@{Input\+Map}}
+\subsubsection[{\texorpdfstring{ob}{ob}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::shared\+\_\+ptr$<${\bf Obstacle}$>$ $>$ Input\+Map\+::ob}\hypertarget{classInputMap_af0905398b4d3281f9876ff27350f9c3b}{}\label{classInputMap_af0905398b4d3281f9876ff27350f9c3b}
+\index{Input\+Map@{Input\+Map}!ws@{ws}}
+\index{ws@{ws}!Input\+Map@{Input\+Map}}
+\subsubsection[{\texorpdfstring{ws}{ws}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf Robot\+Workspace}$>$ Input\+Map\+::ws}\hypertarget{classInputMap_aea6d53c88c8c0353dd7dc44fd295e256}{}\label{classInputMap_aea6d53c88c8c0353dd7dc44fd295e256}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/bala/workspace/\+Midterm project/\+C\+P\+P-\/\+R\+R\+T/include/\hyperlink{InputMap_8h}{Input\+Map.\+h}\item 
+/home/bala/workspace/\+Midterm project/\+C\+P\+P-\/\+R\+R\+T/app/\hyperlink{InputMap_8cpp}{Input\+Map.\+cpp}\end{DoxyCompactItemize}

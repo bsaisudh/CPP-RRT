@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$structCircleTest.html" title="Circle class test fixture. " alt="" coords="135,5,217,32"/>
+<area shape="rect" id="node3" href="$structObstacleCircleTest.html" title="Obstacle Circle class test fixture for overriding. " alt="" coords="109,56,243,83"/>
+<area shape="rect" id="node4" href="$structObstacleSquareTest.html" title="Obstacle square class test fixture for overriding. " alt="" coords="105,107,247,133"/>
+<area shape="rect" id="node5" href="$structRobotWorkspaceTest.html" title="RobotWorkspace class test fixture. " alt="" coords="101,157,251,184"/>
+<area shape="rect" id="node6" href="$structSquareTest.html" title="Square class test fixture. " alt="" coords="131,208,221,235"/>
+</map>

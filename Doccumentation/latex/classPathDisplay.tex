@@ -1,0 +1,125 @@
+\hypertarget{classPathDisplay}{}\section{Path\+Display Class Reference}
+\label{classPathDisplay}\index{Path\+Display@{Path\+Display}}
+
+
+Class to display path along with arena to user.  
+
+
+
+
+{\ttfamily \#include $<$Path\+Display.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPathDisplay_a53f5ac55c989347750fc401ced3355ed}{Path\+Display} ()
+\begin{DoxyCompactList}\small\item\em Constructor to initialize all variables. \end{DoxyCompactList}\item 
+void \hyperlink{classPathDisplay_ac1c4ea52e9ba7f73bd9a1569e8399575}{update\+Input\+Map} (std\+::shared\+\_\+ptr$<$ \hyperlink{classInputMap}{Input\+Map} $>$ \+\_\+i\+Map)
+\begin{DoxyCompactList}\small\item\em Updates the input map object. \end{DoxyCompactList}\item 
+void \hyperlink{classPathDisplay_a3dddc0af19261aaf8021551510009422}{display\+Path} (std\+::ostream \&out, std\+::vector$<$ \hyperlink{structpoint}{point} $>$ \&path)
+\begin{DoxyCompactList}\small\item\em Displays path and robot arena to user. \end{DoxyCompactList}\item 
+virtual \hyperlink{classPathDisplay_aa49d540a7706c1dff83e2fc9120d8d59}{$\sim$\+Path\+Display} ()
+\begin{DoxyCompactList}\small\item\em Destructor to free up space once object goes out of scope. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classInputMap}{Input\+Map} $>$ \hyperlink{classPathDisplay_af35e969a46cc0a7c5ec013efde7ae51e}{i\+Map}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class to display path along with arena to user. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Path\+Display@{Path\+Display}!Path\+Display@{Path\+Display}}
+\index{Path\+Display@{Path\+Display}!Path\+Display@{Path\+Display}}
+\subsubsection[{\texorpdfstring{Path\+Display()}{PathDisplay()}}]{\setlength{\rightskip}{0pt plus 5cm}Path\+Display\+::\+Path\+Display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classPathDisplay_a53f5ac55c989347750fc401ced3355ed}{}\label{classPathDisplay_a53f5ac55c989347750fc401ced3355ed}
+
+
+Constructor to initialize all variables. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\index{Path\+Display@{Path\+Display}!````~Path\+Display@{$\sim$\+Path\+Display}}
+\index{````~Path\+Display@{$\sim$\+Path\+Display}!Path\+Display@{Path\+Display}}
+\subsubsection[{\texorpdfstring{$\sim$\+Path\+Display()}{~PathDisplay()}}]{\setlength{\rightskip}{0pt plus 5cm}Path\+Display\+::$\sim$\+Path\+Display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classPathDisplay_aa49d540a7706c1dff83e2fc9120d8d59}{}\label{classPathDisplay_aa49d540a7706c1dff83e2fc9120d8d59}
+
+
+Destructor to free up space once object goes out of scope. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Path\+Display@{Path\+Display}!display\+Path@{display\+Path}}
+\index{display\+Path@{display\+Path}!Path\+Display@{Path\+Display}}
+\subsubsection[{\texorpdfstring{display\+Path(std\+::ostream \&out, std\+::vector$<$ point $>$ \&path)}{displayPath(std::ostream &out, std::vector< point > &path)}}]{\setlength{\rightskip}{0pt plus 5cm}void Path\+Display\+::display\+Path (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{out, }
+\item[{std\+::vector$<$ {\bf point} $>$ \&}]{path}
+\end{DoxyParamCaption}
+)}\hypertarget{classPathDisplay_a3dddc0af19261aaf8021551510009422}{}\label{classPathDisplay_a3dddc0af19261aaf8021551510009422}
+
+
+Displays path and robot arena to user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Input} & and output stream references \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\index{Path\+Display@{Path\+Display}!update\+Input\+Map@{update\+Input\+Map}}
+\index{update\+Input\+Map@{update\+Input\+Map}!Path\+Display@{Path\+Display}}
+\subsubsection[{\texorpdfstring{update\+Input\+Map(std\+::shared\+\_\+ptr$<$ Input\+Map $>$ \+\_\+i\+Map)}{updateInputMap(std::shared_ptr< InputMap > _iMap)}}]{\setlength{\rightskip}{0pt plus 5cm}void Path\+Display\+::update\+Input\+Map (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf Input\+Map} $>$}]{\+\_\+i\+Map}
+\end{DoxyParamCaption}
+)}\hypertarget{classPathDisplay_ac1c4ea52e9ba7f73bd9a1569e8399575}{}\label{classPathDisplay_ac1c4ea52e9ba7f73bd9a1569e8399575}
+
+
+Updates the input map object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Shared} & pointer to input map object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Path\+Display@{Path\+Display}!i\+Map@{i\+Map}}
+\index{i\+Map@{i\+Map}!Path\+Display@{Path\+Display}}
+\subsubsection[{\texorpdfstring{i\+Map}{iMap}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf Input\+Map}$>$ Path\+Display\+::i\+Map}\hypertarget{classPathDisplay_af35e969a46cc0a7c5ec013efde7ae51e}{}\label{classPathDisplay_af35e969a46cc0a7c5ec013efde7ae51e}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/bala/workspace/\+Midterm project/\+C\+P\+P-\/\+R\+R\+T/include/\hyperlink{PathDisplay_8h}{Path\+Display.\+h}\item 
+/home/bala/workspace/\+Midterm project/\+C\+P\+P-\/\+R\+R\+T/app/\hyperlink{PathDisplay_8cpp}{Path\+Display.\+cpp}\end{DoxyCompactItemize}

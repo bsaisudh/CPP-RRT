@@ -1,0 +1,174 @@
+\hypertarget{ObstacleTest_8cpp}{}\section{/home/bala/workspace/\+Midterm project/\+C\+P\+P-\/\+R\+R\+T/test/\+Obstacle\+Test.cpp File Reference}
+\label{ObstacleTest_8cpp}\index{/home/bala/workspace/\+Midterm project/\+C\+P\+P-\/\+R\+R\+T/test/\+Obstacle\+Test.\+cpp@{/home/bala/workspace/\+Midterm project/\+C\+P\+P-\/\+R\+R\+T/test/\+Obstacle\+Test.\+cpp}}
+{\ttfamily \#include $<$gtest/gtest.\+h$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include \char`\"{}../include/\+Obstacle.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../include/\+Square.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../include/\+Circle.\+h\char`\"{}}\\*
+Include dependency graph for Obstacle\+Test.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ObstacleTest_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSquareTest}{Square\+Test}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classSquare}{Square} class test fixture. \end{DoxyCompactList}\item 
+struct \hyperlink{structCircleTest}{Circle\+Test}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classCircle}{Circle} class test fixture. \end{DoxyCompactList}\item 
+struct \hyperlink{structObstacleCircleTest}{Obstacle\+Circle\+Test}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classObstacle}{Obstacle} \hyperlink{classCircle}{Circle} class test fixture for overriding. \end{DoxyCompactList}\item 
+struct \hyperlink{structObstacleSquareTest}{Obstacle\+Square\+Test}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classObstacle}{Obstacle} square class test fixture for overriding. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ObstacleTest_8cpp_afc7bab07ae078a30433e3495d400ac78}{T\+E\+ST} (Square\+Class, Initialization)
+\begin{DoxyCompactList}\small\item\em Testing square initialization. \end{DoxyCompactList}\item 
+\hyperlink{ObstacleTest_8cpp_a3799eaeeb026b9cae5cad17d3653f4fe}{T\+E\+S\+T\+\_\+F} (\hyperlink{structSquareTest}{Square\+Test}, Inside\+Outside\+Obstacle)
+\begin{DoxyCompactList}\small\item\em Testing if point is inside square obstacle or not. \end{DoxyCompactList}\item 
+\hyperlink{ObstacleTest_8cpp_a9dd02dfb89d63f1bc692e5743e557224}{T\+E\+S\+T\+\_\+F} (\hyperlink{structSquareTest}{Square\+Test}, Fill\+Square\+Obstacle)
+\begin{DoxyCompactList}\small\item\em Testing filling the square obstacle. \end{DoxyCompactList}\item 
+\hyperlink{ObstacleTest_8cpp_ab57fedd08ee12ade1a212745f3fa7e25}{T\+E\+ST} (Circle\+Class, Initialization)
+\begin{DoxyCompactList}\small\item\em Testing circle initialization. \end{DoxyCompactList}\item 
+\hyperlink{ObstacleTest_8cpp_a634e1a3cd0ffa153a42d43ebaabd20fc}{T\+E\+S\+T\+\_\+F} (\hyperlink{structCircleTest}{Circle\+Test}, inside\+Outside\+Obstacle)
+\begin{DoxyCompactList}\small\item\em Testing if point is inside circle obstacle or not. \end{DoxyCompactList}\item 
+\hyperlink{ObstacleTest_8cpp_aef3eb79545f80091239742ee1a4d4596}{T\+E\+S\+T\+\_\+F} (\hyperlink{structCircleTest}{Circle\+Test}, Fill\+Circle\+Obstacle)
+\begin{DoxyCompactList}\small\item\em Testing filling the circle obstacle. \end{DoxyCompactList}\item 
+\hyperlink{ObstacleTest_8cpp_a9fd0db3707fb6cfb7fd6bc354b1344d7}{T\+E\+ST} (Obstacle\+Circle\+Class, Initialization)
+\begin{DoxyCompactList}\small\item\em Testing circle initialization fir overriding. \end{DoxyCompactList}\item 
+\hyperlink{ObstacleTest_8cpp_ac0ab87a7e42b6abd39ba103ec99b4b02}{T\+E\+S\+T\+\_\+F} (\hyperlink{structObstacleCircleTest}{Obstacle\+Circle\+Test}, inside\+Outside\+Obstacle)
+\begin{DoxyCompactList}\small\item\em Testing if point is inside circle obstacle or not through overriding. \end{DoxyCompactList}\item 
+\hyperlink{ObstacleTest_8cpp_a87923ae54a36a2de1c8a494bce6b3901}{T\+E\+ST} (Obstaclesquare\+Class, Initialization)
+\begin{DoxyCompactList}\small\item\em Testing square class initialization for overriding. \end{DoxyCompactList}\item 
+\hyperlink{ObstacleTest_8cpp_a185c90335f2880930140c19868132b7e}{T\+E\+S\+T\+\_\+F} (\hyperlink{structObstacleSquareTest}{Obstacle\+Square\+Test}, inside\+Outside\+Obstacle)
+\begin{DoxyCompactList}\small\item\em Testing if point is inside circle obstacle or not through overriding. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{Obstacle\+Test.\+cpp@{Obstacle\+Test.\+cpp}!T\+E\+ST@{T\+E\+ST}}
+\index{T\+E\+ST@{T\+E\+ST}!Obstacle\+Test.\+cpp@{Obstacle\+Test.\+cpp}}
+\subsubsection[{\texorpdfstring{T\+E\+S\+T(\+Square\+Class, Initialization)}{TEST(SquareClass, Initialization)}}]{\setlength{\rightskip}{0pt plus 5cm}T\+E\+ST (
+\begin{DoxyParamCaption}
+\item[{Square\+Class}]{, }
+\item[{Initialization}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{ObstacleTest_8cpp_afc7bab07ae078a30433e3495d400ac78}{}\label{ObstacleTest_8cpp_afc7bab07ae078a30433e3495d400ac78}
+
+
+Testing square initialization. 
+
+\index{Obstacle\+Test.\+cpp@{Obstacle\+Test.\+cpp}!T\+E\+ST@{T\+E\+ST}}
+\index{T\+E\+ST@{T\+E\+ST}!Obstacle\+Test.\+cpp@{Obstacle\+Test.\+cpp}}
+\subsubsection[{\texorpdfstring{T\+E\+S\+T(\+Circle\+Class, Initialization)}{TEST(CircleClass, Initialization)}}]{\setlength{\rightskip}{0pt plus 5cm}T\+E\+ST (
+\begin{DoxyParamCaption}
+\item[{Circle\+Class}]{, }
+\item[{Initialization}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{ObstacleTest_8cpp_ab57fedd08ee12ade1a212745f3fa7e25}{}\label{ObstacleTest_8cpp_ab57fedd08ee12ade1a212745f3fa7e25}
+
+
+Testing circle initialization. 
+
+\index{Obstacle\+Test.\+cpp@{Obstacle\+Test.\+cpp}!T\+E\+ST@{T\+E\+ST}}
+\index{T\+E\+ST@{T\+E\+ST}!Obstacle\+Test.\+cpp@{Obstacle\+Test.\+cpp}}
+\subsubsection[{\texorpdfstring{T\+E\+S\+T(\+Obstacle\+Circle\+Class, Initialization)}{TEST(ObstacleCircleClass, Initialization)}}]{\setlength{\rightskip}{0pt plus 5cm}T\+E\+ST (
+\begin{DoxyParamCaption}
+\item[{Obstacle\+Circle\+Class}]{, }
+\item[{Initialization}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{ObstacleTest_8cpp_a9fd0db3707fb6cfb7fd6bc354b1344d7}{}\label{ObstacleTest_8cpp_a9fd0db3707fb6cfb7fd6bc354b1344d7}
+
+
+Testing circle initialization fir overriding. 
+
+\index{Obstacle\+Test.\+cpp@{Obstacle\+Test.\+cpp}!T\+E\+ST@{T\+E\+ST}}
+\index{T\+E\+ST@{T\+E\+ST}!Obstacle\+Test.\+cpp@{Obstacle\+Test.\+cpp}}
+\subsubsection[{\texorpdfstring{T\+E\+S\+T(\+Obstaclesquare\+Class, Initialization)}{TEST(ObstaclesquareClass, Initialization)}}]{\setlength{\rightskip}{0pt plus 5cm}T\+E\+ST (
+\begin{DoxyParamCaption}
+\item[{Obstaclesquare\+Class}]{, }
+\item[{Initialization}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{ObstacleTest_8cpp_a87923ae54a36a2de1c8a494bce6b3901}{}\label{ObstacleTest_8cpp_a87923ae54a36a2de1c8a494bce6b3901}
+
+
+Testing square class initialization for overriding. 
+
+\index{Obstacle\+Test.\+cpp@{Obstacle\+Test.\+cpp}!T\+E\+S\+T\+\_\+F@{T\+E\+S\+T\+\_\+F}}
+\index{T\+E\+S\+T\+\_\+F@{T\+E\+S\+T\+\_\+F}!Obstacle\+Test.\+cpp@{Obstacle\+Test.\+cpp}}
+\subsubsection[{\texorpdfstring{T\+E\+S\+T\+\_\+\+F(\+Square\+Test, Inside\+Outside\+Obstacle)}{TEST_F(SquareTest, InsideOutsideObstacle)}}]{\setlength{\rightskip}{0pt plus 5cm}T\+E\+S\+T\+\_\+F (
+\begin{DoxyParamCaption}
+\item[{{\bf Square\+Test}}]{, }
+\item[{Inside\+Outside\+Obstacle}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{ObstacleTest_8cpp_a3799eaeeb026b9cae5cad17d3653f4fe}{}\label{ObstacleTest_8cpp_a3799eaeeb026b9cae5cad17d3653f4fe}
+
+
+Testing if point is inside square obstacle or not. 
+
+\index{Obstacle\+Test.\+cpp@{Obstacle\+Test.\+cpp}!T\+E\+S\+T\+\_\+F@{T\+E\+S\+T\+\_\+F}}
+\index{T\+E\+S\+T\+\_\+F@{T\+E\+S\+T\+\_\+F}!Obstacle\+Test.\+cpp@{Obstacle\+Test.\+cpp}}
+\subsubsection[{\texorpdfstring{T\+E\+S\+T\+\_\+\+F(\+Square\+Test, Fill\+Square\+Obstacle)}{TEST_F(SquareTest, FillSquareObstacle)}}]{\setlength{\rightskip}{0pt plus 5cm}T\+E\+S\+T\+\_\+F (
+\begin{DoxyParamCaption}
+\item[{{\bf Square\+Test}}]{, }
+\item[{Fill\+Square\+Obstacle}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{ObstacleTest_8cpp_a9dd02dfb89d63f1bc692e5743e557224}{}\label{ObstacleTest_8cpp_a9dd02dfb89d63f1bc692e5743e557224}
+
+
+Testing filling the square obstacle. 
+
+\index{Obstacle\+Test.\+cpp@{Obstacle\+Test.\+cpp}!T\+E\+S\+T\+\_\+F@{T\+E\+S\+T\+\_\+F}}
+\index{T\+E\+S\+T\+\_\+F@{T\+E\+S\+T\+\_\+F}!Obstacle\+Test.\+cpp@{Obstacle\+Test.\+cpp}}
+\subsubsection[{\texorpdfstring{T\+E\+S\+T\+\_\+\+F(\+Circle\+Test, inside\+Outside\+Obstacle)}{TEST_F(CircleTest, insideOutsideObstacle)}}]{\setlength{\rightskip}{0pt plus 5cm}T\+E\+S\+T\+\_\+F (
+\begin{DoxyParamCaption}
+\item[{{\bf Circle\+Test}}]{, }
+\item[{inside\+Outside\+Obstacle}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{ObstacleTest_8cpp_a634e1a3cd0ffa153a42d43ebaabd20fc}{}\label{ObstacleTest_8cpp_a634e1a3cd0ffa153a42d43ebaabd20fc}
+
+
+Testing if point is inside circle obstacle or not. 
+
+\index{Obstacle\+Test.\+cpp@{Obstacle\+Test.\+cpp}!T\+E\+S\+T\+\_\+F@{T\+E\+S\+T\+\_\+F}}
+\index{T\+E\+S\+T\+\_\+F@{T\+E\+S\+T\+\_\+F}!Obstacle\+Test.\+cpp@{Obstacle\+Test.\+cpp}}
+\subsubsection[{\texorpdfstring{T\+E\+S\+T\+\_\+\+F(\+Circle\+Test, Fill\+Circle\+Obstacle)}{TEST_F(CircleTest, FillCircleObstacle)}}]{\setlength{\rightskip}{0pt plus 5cm}T\+E\+S\+T\+\_\+F (
+\begin{DoxyParamCaption}
+\item[{{\bf Circle\+Test}}]{, }
+\item[{Fill\+Circle\+Obstacle}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{ObstacleTest_8cpp_aef3eb79545f80091239742ee1a4d4596}{}\label{ObstacleTest_8cpp_aef3eb79545f80091239742ee1a4d4596}
+
+
+Testing filling the circle obstacle. 
+
+\index{Obstacle\+Test.\+cpp@{Obstacle\+Test.\+cpp}!T\+E\+S\+T\+\_\+F@{T\+E\+S\+T\+\_\+F}}
+\index{T\+E\+S\+T\+\_\+F@{T\+E\+S\+T\+\_\+F}!Obstacle\+Test.\+cpp@{Obstacle\+Test.\+cpp}}
+\subsubsection[{\texorpdfstring{T\+E\+S\+T\+\_\+\+F(\+Obstacle\+Circle\+Test, inside\+Outside\+Obstacle)}{TEST_F(ObstacleCircleTest, insideOutsideObstacle)}}]{\setlength{\rightskip}{0pt plus 5cm}T\+E\+S\+T\+\_\+F (
+\begin{DoxyParamCaption}
+\item[{{\bf Obstacle\+Circle\+Test}}]{, }
+\item[{inside\+Outside\+Obstacle}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{ObstacleTest_8cpp_ac0ab87a7e42b6abd39ba103ec99b4b02}{}\label{ObstacleTest_8cpp_ac0ab87a7e42b6abd39ba103ec99b4b02}
+
+
+Testing if point is inside circle obstacle or not through overriding. 
+
+\index{Obstacle\+Test.\+cpp@{Obstacle\+Test.\+cpp}!T\+E\+S\+T\+\_\+F@{T\+E\+S\+T\+\_\+F}}
+\index{T\+E\+S\+T\+\_\+F@{T\+E\+S\+T\+\_\+F}!Obstacle\+Test.\+cpp@{Obstacle\+Test.\+cpp}}
+\subsubsection[{\texorpdfstring{T\+E\+S\+T\+\_\+\+F(\+Obstacle\+Square\+Test, inside\+Outside\+Obstacle)}{TEST_F(ObstacleSquareTest, insideOutsideObstacle)}}]{\setlength{\rightskip}{0pt plus 5cm}T\+E\+S\+T\+\_\+F (
+\begin{DoxyParamCaption}
+\item[{{\bf Obstacle\+Square\+Test}}]{, }
+\item[{inside\+Outside\+Obstacle}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{ObstacleTest_8cpp_a185c90335f2880930140c19868132b7e}{}\label{ObstacleTest_8cpp_a185c90335f2880930140c19868132b7e}
+
+
+Testing if point is inside circle obstacle or not through overriding. 
+

@@ -17,17 +17,17 @@
 #include "Obstacle.h"
 
 /**
- * @brief Obstacle obstacle class that serves as parent for all types of obstacles.
+ * @brief Circle class that holds functions of circular obstacle.
  */
 class Circle : public Obstacle {
  private:
-  int centerX;    // !<X co-ordinate of enter point
-  int centerY;    // !<Y co-ordinate of enter point
+  int centerX;    // !<X co-ordinate of center point
+  int centerY;    // !<Y co-ordinate of center point
   int radius;     // !<Radius of circle
 
  public:
   /**
-   * @brief Constructor to initialize all variables for Circle class
+   * @brief Constructor to initialize all variables for obstacle class
    * @param None
    * @return None
    */

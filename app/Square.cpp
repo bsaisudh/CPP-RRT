@@ -31,6 +31,7 @@ void Square::dispBoundary(std::ostream &out) {
 }
 
 bool Square::inObstacle(int xCoord, int yCoord) {
+  // !<compare using x , y and side of the square
   if (xCoord >= startX && xCoord <= startX + side && yCoord >= startY
       && yCoord <= startY + side) {
     return true;
@@ -41,6 +42,7 @@ bool Square::inObstacle(int xCoord, int yCoord) {
 
 void Square::fillObstacle(std::vector<point> &obMap) {
   point p;
+  // Traverse through points inside square
   for (auto i = startX; i < startX + side; i++) {
     for (int j = startX; j < startX + side; j++) {
       p.x = i;
