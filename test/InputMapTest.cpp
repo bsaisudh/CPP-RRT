@@ -2,7 +2,9 @@
  * @file InputMapTest.cpp
  * @Copyright MIT license
  * Copyright (c) 2018 Bala Murali Manoghar Sai Sudhakar
- * @author: Bala Murali Manoghar Sai Sudhakar
+ * Copyright (c) 2018 Akshay Rajaraman
+ * @author Bala Murali Manoghar Sai Sudhakar
+ * @author Akshay Rajaraman
  * @brief Testing InputMap class
  */
 
@@ -11,7 +13,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <string>
+
 
 #include "../include/InputMap.h"
 #include "../include/RobotWorkspace.h"
@@ -62,7 +64,6 @@ TEST(InputMapclass, ConfigSpaceCreation) {
 
   // Assert
   ASSERT_STREQ(sout.str().c_str(), configSpaceStr.c_str());
-
 }
 
 /**
@@ -94,7 +95,6 @@ TEST(InputMapclass, SetWorkspaceTest) {
       "Workspace : ( 0 , 0 ) ( 6 , 6)\n";
   // Assert
   ASSERT_STREQ(sout.str().c_str(), configSpaceStr.c_str());
-
 }
 
 /**
@@ -125,5 +125,4 @@ TEST(InputMapclass, AddObstacleTest) {
 
   // Assert
   ASSERT_STREQ(sout.str().c_str(), configSpaceStr.c_str());
-
 }

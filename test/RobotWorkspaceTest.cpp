@@ -62,7 +62,9 @@ TEST(RobotWorkSpaceClass, Initialization) {
   // Test
   ASSERT_STREQ(
       sout.str().c_str(),
-      "Start point :2 , 2\nGoal point :9 , 9\nWorkspace : ( 0 , 0 ) ( 10 , 10)\n");
+      "Start point :2 , 2\n"
+      "Goal point :9 , 9\n"
+      "Workspace : ( 0 , 0 ) ( 10 , 10)\n");
 }
 
 /**

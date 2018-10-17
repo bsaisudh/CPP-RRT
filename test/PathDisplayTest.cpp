@@ -3,7 +3,8 @@
  * @Copyright MIT license
  * Copyright (c) 2018 Bala Murali Manoghar Sai Sudhakar
  * Copyright (c) 2018 Akshay Rajaraman
- * @author: Bala Murali Manoghar Sai Sudhakar
+ * @author Bala Murali Manoghar Sai Sudhakar
+ * @author Akshay Rajaraman
  * @brief testing path display class
  */
 
@@ -34,7 +35,6 @@ TEST(PathDisplayClass, ConfigSpaceCreation) {
   std::vector<point> path;
   point point;
 
-
   // Act
   // Add Workspace
   sin.str("");
@@ -60,7 +60,7 @@ TEST(PathDisplayClass, ConfigSpaceCreation) {
   // Get Path Output
   sin.str("");
   sout.str("");
-  pathDisp.displayPath(sout,path);
+  pathDisp.displayPath(sout, path);
   std::string configSpaceStr = "\n+ + + + + + + + \n"
       "+             + \n"
       "+   S         + \n"
@@ -72,5 +72,4 @@ TEST(PathDisplayClass, ConfigSpaceCreation) {
 
   // Assert
   ASSERT_STREQ(sout.str().c_str(), configSpaceStr.c_str());
-
 }
