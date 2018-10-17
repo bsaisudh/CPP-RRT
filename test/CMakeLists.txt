@@ -7,6 +7,7 @@ add_executable(
     RobotWorkspaceTest.cpp
     InputMapTest.cpp
     PathDisplayTest.cpp
+    RRTTest.cpp
     ../app/Circle.cpp
     ../app/InputMap.cpp
     ../app/Obstacle.cpp
