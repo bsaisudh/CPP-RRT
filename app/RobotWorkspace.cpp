@@ -1,9 +1,13 @@
 /*
- * RobotWorkspace.cpp
- *  Copyright : Akshay
- *  Created on: Oct 6, 2018
- *      Author: root
+ * @file PathDisplay.cpp
+ * @Copyright MIT license
+ * Copyright (c) 2018 Bala Murali Manoghar Sai Sudhakar
+ * Copyright (c) 2018 Akshay Rajaraman
+ * @author Bala Murali Manoghar Sai Sudhakar
+ * @author Akshay Rajaraman
+ * @brief RobotWorkspace class implementation
  */
+
 
 #include "../include/RobotWorkspace.h"
 

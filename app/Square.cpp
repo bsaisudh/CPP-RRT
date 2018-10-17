@@ -1,8 +1,11 @@
 /*
- * Square.cpp
- *
- *  Created on: Oct 6, 2018
- *      Author: bala
+ * @file Square.cpp
+ * @Copyright MIT license
+ * Copyright (c) 2018 Bala Murali Manoghar Sai Sudhakar
+ * Copyright (c) 2018 Akshay Rajaraman
+ * @author Bala Murali Manoghar Sai Sudhakar
+ * @author Akshay Rajaraman
+ * @brief Square class implementation
  */
 
 #include "Square.h"
@@ -48,6 +51,5 @@ void Square::fillObstacle(std::vector<point> &obMap) {
 }
 
 Square::~Square() {
-// TODO Auto-generated destructor stub
 }
 

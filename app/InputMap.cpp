@@ -1,8 +1,11 @@
 /*
- * InputMap.cpp
- *
- *  Created on: Oct 7, 2018
- *      Author: bala
+ * @file InputMap.cpp
+ * @Copyright MIT license
+ * Copyright (c) 2018 Bala Murali Manoghar Sai Sudhakar
+ * Copyright (c) 2018 Akshay Rajaraman
+ * @author Bala Murali Manoghar Sai Sudhakar
+ * @author Akshay Rajaraman
+ * @brief InputMap class implementation
  */
 
 #include <iostream>
@@ -10,8 +13,6 @@
 #include "../include/InputMap.h"
 
 InputMap::InputMap() {
-  // TODO Auto-generated constructor stub
-
 }
 
 void InputMap::addObstacle(std::vector<std::shared_ptr<Obstacle>> &ob_) {
@@ -49,6 +50,5 @@ void InputMap::dispConfigSpace(std::ostream &out) {
 }
 
 InputMap::~InputMap() {
-  // TODO Auto-generated destructor stub
 }
 

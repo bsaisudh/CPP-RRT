@@ -1,8 +1,11 @@
 /*
- * Circle.cpp
- *
- *  Created on: Oct 12, 2018
- *      Author: bala
+ * @file Circle.cpp
+ * @Copyright MIT license
+ * Copyright (c) 2018 Bala Murali Manoghar Sai Sudhakar
+ * Copyright (c) 2018 Akshay Rajaraman
+ * @author Bala Murali Manoghar Sai Sudhakar
+ * @author Akshay Rajaraman
+ * @brief Circle class implementation
  */
 
 #include "../include/Circle.h"
@@ -11,8 +14,6 @@ Circle::Circle()
     : centerX(0),
       centerY(0),
       radius(0) {
-  // TODO Auto-generated constructor stub
-
 }
 
 void Circle::setBoundary(std::istream &in, std::ostream &out) {
@@ -50,6 +51,5 @@ void Circle::fillObstacle(std::vector<point> &obMap) {
 }
 
 Circle::~Circle() {
-// TODO Auto-generated destructor stub
 }
 

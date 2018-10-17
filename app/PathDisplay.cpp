@@ -1,8 +1,11 @@
 /*
- * PathDisplay.cpp
- *
- *  Created on: Oct 12, 2018
- *      Author: bala
+ * @file PathDisplay.cpp
+ * @Copyright MIT license
+ * Copyright (c) 2018 Bala Murali Manoghar Sai Sudhakar
+ * Copyright (c) 2018 Akshay Rajaraman
+ * @author Bala Murali Manoghar Sai Sudhakar
+ * @author Akshay Rajaraman
+ * @brief PathDisplay class implementation
  */
 
 #include <vector>
@@ -11,15 +14,13 @@
 #include "../include/PathDisplay.h"
 
 PathDisplay::PathDisplay() {
-  // TODO Auto-generated constructor stub
-
 }
 
 void PathDisplay::updateInputMap(std::shared_ptr<InputMap> _iMap) {
   iMap = std::move(_iMap);
 }
 
-void PathDisplay::displayPath(std::ostream &out , std::vector<point> &path) {
+void PathDisplay::displayPath(std::ostream &out, std::vector<point> &path) {
   char map[iMap->ws->maxX + 2][iMap->ws->maxY + 2];
   // Fill with spaces
   for (int i = 0; i < iMap->ws->maxX + 2; i++) {
@@ -46,8 +47,8 @@ void PathDisplay::displayPath(std::ostream &out , std::vector<point> &path) {
     map[i.x + 1][i.y + 1] = 'X';
   }
   // Mark Path
-  for (auto &i : path){
-    map[i.x+1][i.y+1] = '*';
+  for (auto &i : path) {
+    map[i.x + 1][i.y + 1] = '*';
   }
   // Mark start and end points
   map[iMap->ws->startX + 1][iMap->ws->startX + 1] = 'S';
@@ -63,6 +64,5 @@ void PathDisplay::displayPath(std::ostream &out , std::vector<point> &path) {
 }
 
 PathDisplay::~PathDisplay() {
-// TODO Auto-generated destructor stub
 }
 

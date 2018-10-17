@@ -31,7 +31,6 @@ using std::endl;
  * @brief Demo function to perform RRT path planning algorithm
  */
 int main() {
-
   cout << "***********************************************\n"
        "*--------------RRT PATH PLANNING--------------*\n"
        "***********************************************\n"
@@ -41,7 +40,7 @@ int main() {
   std::cin >> decision;
   cout << "\n\n\n\n";
   if (!(decision == 'N' || decision == 'n')) {
-    //Pre defined input map Section
+    // Pre defined input map Section
     std::stringstream sout;
     std::stringstream sin;
     std::shared_ptr<RobotWorkspace> _ws(new RobotWorkspace);
