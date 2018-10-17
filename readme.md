@@ -29,7 +29,20 @@ GNU Plot
 
 ## Agile Development Process
 Pair programming is an agile software development technique in which two programmers work together at one workstation. One, the driver, writes code while the other, the observer or navigator, reviews each line of code as it is typed in. The two programmers switch roles frequently.. You can view the product backlog and development process in this [SPREADSHEET](https://docs.google.com/spreadsheets/d/1cJVLNv9pZ2T4a17OsMPn_WnxRS6tAkfYJKaMcSRo6MA/edit#gid=904828225)
-
+  ### Sprint 1:
+  Akshay Rajaraman (Driver)
+  Bala Murali Manoghar (Navigator)
+  ### Sprint 2:
+  Bala Murali Manoghar (Drive)
+  Akshay Rajaraman (Navigator)
+## Results
+### Program execution
+![alt text](https://raw.githubusercontent.com/bsaisudh/CPP-RRT/master/results/RRT%20Demo%20Output.png)
+In the image above, The start point is represented by S and the end point is represented by E. The obstacle location is represented by 'X' symbol and the boundary of the robot's workspace is defined by '+' symbols.
+### Travis Build
+![alt text](https://raw.githubusercontent.com/bsaisudh/CPP-RRT/master/results/Travis%20Run.jpeg)
+### Coverall Coverage Status
+![alt text](https://raw.githubusercontent.com/bsaisudh/CPP-RRT/master/results/Coveralls%20Run.jpeg)
 ## Standard install via command-line
 ```
 git clone --recursive https://github.com/bsaisudh/CPP-RRT.git
