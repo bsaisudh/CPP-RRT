@@ -108,6 +108,7 @@ bool RRT::updateSampleSpace() {
 }
 
 std::vector<point> RRT::buildPath() {
+  /*
   startPoint[0] = Map -> ws -> startX;
   startPoint[1] = Map -> ws -> startY;
   goalPoint[0] = Map -> ws -> goalX;
@@ -137,7 +138,12 @@ std::vector<point> RRT::buildPath() {
     int x;
     std::cin >> x;
     std::cout << newIndex;
-  }
+  }*/
+  std::vector<point> path;
+  point point;
+  point.x = 2;
+  point.y = 3;
+  path.emplace_back(point);
   return path;
 }
 
