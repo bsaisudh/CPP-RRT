@@ -16,11 +16,11 @@ produce good guesses for variational optimization techniques.
 
 ## UML Diagrams
 ### Class Diagrams
-![alt text](https://raw.githubusercontent.com/bsaisudh/CPP-RRT/master/UML/Initial/classDescriptions.png)
+![alt text](https://raw.githubusercontent.com/bsaisudh/CPP-RRT/master/UML/Revised/classDescriptions.png)
 
 ### Activity Diagrams
-![alt text](https://raw.githubusercontent.com/bsaisudh/CPP-RRT/master/UML/Initial/Activity%20Diagram%20Compute%20Path.png)
-![alt text](https://raw.githubusercontent.com/bsaisudh/CPP-RRT/master/UML/Initial/activityDiagram_RRT.png)
+![alt text](https://raw.githubusercontent.com/bsaisudh/CPP-RRT/master/UML/Revised/Activity%20Diagram%20Compute%20Path.png)
+![alt text](https://raw.githubusercontent.com/bsaisudh/CPP-RRT/master/UML/Revised/activityDiagram_RRT.png)
 
 ## Dependencies
 Cmake
