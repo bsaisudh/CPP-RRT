@@ -6,7 +6,8 @@ var NAVTREE =
       [ "ALGORITHM", "index.html#RRT", null ],
       [ "Specifics", "index.html#Project", null ],
       [ "Process", "index.html#Agile", null ],
-      [ "Diagram", "index.html#Class", null ]
+      [ "Diagram", "index.html#Class", null ],
+      [ "License", "index.html#License", null ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
