@@ -7,6 +7,7 @@ add_executable(
 	RobotWorkspace.cpp
 	InputMap.cpp
 	PathDisplay.cpp
+	RRT.cpp
 	)
 include_directories(
     ${CMAKE_SOURCE_DIR}/include

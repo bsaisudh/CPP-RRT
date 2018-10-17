@@ -17,7 +17,7 @@ class PathDisplay {
   std::shared_ptr<InputMap> iMap;
   PathDisplay();
   void updateInputMap(std::shared_ptr<InputMap> _iMap);
-  void displayPath(std::ostream &out);
+  void displayPath(std::ostream &out, std::vector<point> &path);
   virtual ~PathDisplay();
 };
 

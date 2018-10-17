@@ -30,7 +30,10 @@ TEST(PathDisplayClass, ConfigSpaceCreation) {
   std::vector<std::shared_ptr<Obstacle>> ob;
   std::shared_ptr<RobotWorkspace> _ws(new RobotWorkspace);
   std::shared_ptr<InputMap> im(new InputMap);
-  PathDisplay path;
+  PathDisplay pathDisp;
+  std::vector<point> path;
+  point point;
+
 
   // Act
   // Add Workspace
@@ -40,6 +43,9 @@ TEST(PathDisplayClass, ConfigSpaceCreation) {
   _ws->setBoundary(sin, sout);
   _ws->setStart(sin, sout);
   _ws->setGoal(sin, sout);
+  point.x = 2;
+  point.y = 3;
+  path.emplace_back(point);
   // Add Square
   sin.str("");
   sout.str("");
@@ -50,14 +56,14 @@ TEST(PathDisplayClass, ConfigSpaceCreation) {
   im->addObstacle(ob);
   im->setWorkspace(std::move(_ws));
   // Send map object to path display
-  path.updateInputMap(std::move(im));
+  pathDisp.updateInputMap(std::move(im));
   // Get Path Output
   sin.str("");
   sout.str("");
-  path.displayPath(sout);
+  pathDisp.displayPath(sout,path);
   std::string configSpaceStr = "\n+ + + + + + + + \n"
       "+             + \n"
-      "+   S         + \n"
+      "+   S *       + \n"
       "+     X E     + \n"
       "+             + \n"
       "+             + \n"

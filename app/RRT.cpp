@@ -150,5 +150,3 @@ std::vector<point> RRT::buildPath() {
 
 RRT::~RRT() {
 }
-
-
