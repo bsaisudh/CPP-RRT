@@ -47,7 +47,7 @@ void PathDisplay::displayPath(std::ostream &out , std::vector<point> &path) {
   }
   // Mark Path
   for (auto &i : path){
-    map[i.x][i.y] = '*';
+    map[i.x+1][i.y+1] = '*';
   }
   // Mark start and end points
   map[iMap->ws->startX + 1][iMap->ws->startX + 1] = 'S';
