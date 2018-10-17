@@ -5,13 +5,14 @@
  * Copyright (c) 2018 Akshay Rajaraman
  * @author Bala Murali Manoghar Sai Sudhakar
  * @author Akshay Rajaraman
- * @brief Square object creation
+ * @brief Circle class functions
  */
 
-#ifndef APP_CIRCLE_H_
-#define APP_CIRCLE_H_
+#ifndef INCLUDE_CIRCLE_H_
+#define INCLUDE_CIRCLE_H_
 
 #include <iostream>
+#include <vector>
 
 #include "Obstacle.h"
 
@@ -63,4 +64,4 @@ class Circle : public Obstacle {
   virtual ~Circle();
 };
 
-#endif /* APP_CIRCLE_H_ */
+#endif  // INCLUDE_CIRCLE_H_

@@ -1,13 +1,19 @@
+
 /*
- * Square.h
- *
- *  Created on: Oct 6, 2018
- *      Author: bala
+ * @file Square.h
+ * @Copyright MIT license
+ * Copyright (c) 2018 Bala Murali Manoghar Sai Sudhakar
+ * Copyright (c) 2018 Akshay Rajaraman
+ * @author Bala Murali Manoghar Sai Sudhakar
+ * @author Akshay Rajaraman
+ * @brief Square Class functions
  */
-#ifndef SQUARE_H_
-#define SQUARE_H_
+
+#ifndef INCLUDE_SQUARE_H_
+#define INCLUDE_SQUARE_H_
 
 #include <iostream>
+#include <vector>
 
 #include "Obstacle.h"
 
@@ -26,4 +32,4 @@ class Square : public Obstacle {
   virtual ~Square();
 };
 
-#endif /* SQUARE_H_ */
+#endif /* INCLUDE_SQUARE_H_ */

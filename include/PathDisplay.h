@@ -1,12 +1,15 @@
 /*
- * PathDisplay.h
- *
- *  Created on: Oct 12, 2018
- *      Author: bala
+ * @file PathDisplay.h
+ * @Copyright MIT license
+ * Copyright (c) 2018 Bala Murali Manoghar Sai Sudhakar
+ * Copyright (c) 2018 Akshay Rajaraman
+ * @author Bala Murali Manoghar Sai Sudhakar
+ * @author Akshay Rajaraman
+ * @brief PathDisplay Class functions
  */
 
-#ifndef APP_PATHDISPLAY_H_
-#define APP_PATHDISPLAY_H_
+#ifndef INCLUDE_PATHDISPLAY_H_
+#define INCLUDE_PATHDISPLAY_H_
 
 #include <vector>
 #include <memory>
@@ -21,4 +24,4 @@ class PathDisplay {
   virtual ~PathDisplay();
 };
 
-#endif /* APP_PATHDISPLAY_H_ */
+#endif /* INCLUDE_PATHDISPLAY_H_ */

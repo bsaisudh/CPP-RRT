@@ -8,8 +8,8 @@
  * @brief Obstacle class which is a abstract class for all obstacles
  */
 
-#ifndef OBSTACLE_H_
-#define OBSTACLE_H_
+#ifndef INCLUDE_OBSTACLE_H_
+#define INCLUDE_OBSTACLE_H_
 
 #include <iostream>
 #include <vector>
@@ -64,4 +64,4 @@ class Obstacle {
   virtual ~Obstacle();
 };
 
-#endif /* OBSTACLE_H_ */
+#endif /* INCLUDE_OBSTACLE_H_ */

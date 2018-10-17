@@ -1,12 +1,15 @@
 /*
- * InputMap.h
- *
- *  Created on: Oct 7, 2018
- *      Author: bala
+ * @file InputMap.h
+ * @Copyright MIT license
+ * Copyright (c) 2018 Bala Murali Manoghar Sai Sudhakar
+ * Copyright (c) 2018 Akshay Rajaraman
+ * @author Bala Murali Manoghar Sai Sudhakar
+ * @author Akshay Rajaraman
+ * @brief InputMap Class functions
  */
 
-#ifndef INPUTMAP_H_
-#define INPUTMAP_H_
+#ifndef INCLUDE_INPUTMAP_H_
+#define INCLUDE_INPUTMAP_H_
 
 #include <vector>
 #include <memory>
@@ -28,4 +31,4 @@ class InputMap {
   virtual ~InputMap();
 };
 
-#endif /* INPUTMAP_H_ */
+#endif /* INCLUDE_INPUTMAP_H_ */
