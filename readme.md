@@ -74,7 +74,10 @@ mkdir -p ~/workspace
 cd ~/workspace
 git clone --recursive https://github.com/bsaisudh/CPP-RRT.git
 ```
-
+for running the GMock tests run:
+```
+git clone -b GMock_Extra_Credit_Akshay --recursive https://github.com/bsaisudh/CPP-RRT.git
+```
 In your work directory, use cmake to create an Eclipse project for an [out-of-source build] of CPP-RRT
 
 ```
