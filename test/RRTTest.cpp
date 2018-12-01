@@ -13,6 +13,7 @@
 #include <iostream>
 #include <utility>
 #include <vector>
+#include <gmock/gmock.h>
 
 #include "../include/InputMap.h"
 #include "../include/RRT.h"

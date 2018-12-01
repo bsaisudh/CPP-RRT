@@ -13,13 +13,40 @@
 #include <iostream>
 #include <string>
 #include <vector>
-
+#include <gmock/gmock.h>
 
 #include "../include/InputMap.h"
 #include "../include/RobotWorkspace.h"
 #include "../include/Obstacle.h"
 #include "../include/Square.h"
 #include "../include/Circle.h"
+
+/*
+ class MockOb : public Obstacle{
+ public:
+ MOCK_METHOD2(setBoundary, void(std::istream &in, std::ostream &out));
+ MOCK_METHOD1(dispBoundary, void(std::ostream &out));
+ MOCK_METHOD2(inObstacle, bool(int xCoord, int yCoord));
+ MOCK_METHOD1(fillObstacle, void(std::vector<point> &obMap));
+ };
+
+ TEST(MockTest, Test){
+ // Arrange
+ MockOb obs;
+ std::stringstream sout;
+ std::stringstream sin;
+ std::vector<std::shared_ptr<Obstacle>> ob;
+
+ // EXPECT_CALL(obs,inObstacle(2,2)).Times(1);
+ sin.str("");
+ sout.str("");
+ sin << "2 2 1 ";
+ //ob.emplace_back(new MockOb);
+ //ob[0]->setBoundary(sin, sout);
+
+ // Assert
+ }
+ */
 
 /**
  * @brief Testing input map computation

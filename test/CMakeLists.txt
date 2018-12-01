@@ -8,6 +8,7 @@ add_executable(
     InputMapTest.cpp
     PathDisplayTest.cpp
     RRTTest.cpp
+     MockTestSquare.cpp
     ../app/Circle.cpp
     ../app/InputMap.cpp
     ../app/Obstacle.cpp
@@ -17,8 +18,23 @@ add_executable(
     ../app/Square.cpp
 )
 
-target_include_directories(cpp-test PUBLIC ../vendor/googletest/googletest/include 
-                                           ${CMAKE_SOURCE_DIR}/include
+#add_executable(
+#    cpp-test
+#    main.cpp
+#    ../app/Square.cpp
+#	../app/Obstacle.cpp
+#)
+
+#target_include_directories(cpp-test PUBLIC ../vendor/googletest/googletest/include 
+#                                           ${CMAKE_SOURCE_DIR}/include
+#					   ../vendor/googletest/googlemock/include
+#					   ../include)
+
+target_include_directories(cpp-test PUBLIC ${CMAKE_SOURCE_DIR}/include
 					   ../vendor/googletest/googlemock/include
 					   ../include)
-target_link_libraries(cpp-test PUBLIC gtest)
+
+#target_include_directories(cpp-test PUBLIC ../vendor/googletest/googlemock/include
+#						../include)
+
+target_link_libraries(cpp-test PUBLIC gtest gmock)

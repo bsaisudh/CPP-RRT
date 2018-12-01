@@ -37,25 +37,25 @@ class Square : public Obstacle {
    * @param Input and output stream
    * @return None
    */
-  void setBoundary(std::istream &in, std::ostream &out);
+  virtual void setBoundary(std::istream &in, std::ostream &out);
   /**
    * @brief Display the square obstacle boundary points to user that has given
    * @param Output stream
    * @return input stream
    */
-  void dispBoundary(std::ostream &out);
+  virtual void dispBoundary(std::ostream &out);
   /**
    * @brief Checks if the point is inside the circle obstacle
    * @param X and y coordinates for the point to be checked
    * @return True if the point is inside obstacle else false
    */
-  bool inObstacle(int xCoord, int yCoord);
+  virtual bool inObstacle(int xCoord, int yCoord);
   /**
    * @brief Finds all points in circle obstacle
    * @param Vector to hold all points of obstacle
    * @return None
    */
-  void fillObstacle(std::vector<point> &obMap);
+  virtual void fillObstacle(std::vector<point> &obMap);
   /**
    * @brief Destructor to free up space once object goes out of scope
    * @param None
