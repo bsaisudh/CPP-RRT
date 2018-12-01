@@ -1,0 +1,29 @@
+./include/Circle.h:58:  Is this a non-const reference? If so, make const or use a pointer: std::vector<point> &obMap  [runtime/references] [2]
+Done processing ./include/Circle.h
+./include/Obstacle.h:59:  Is this a non-const reference? If so, make const or use a pointer: std::vector<point> &obMap  [runtime/references] [2]
+Done processing ./include/Obstacle.h
+Done processing ./include/RobotWorkspace.h
+./include/Square.h:58:  Is this a non-const reference? If so, make const or use a pointer: std::vector<point> &obMap  [runtime/references] [2]
+Done processing ./include/Square.h
+./include/InputMap.h:51:  Is this a non-const reference? If so, make const or use a pointer: std::vector<std::shared_ptr<Obstacle>> &ob_  [runtime/references] [2]
+Done processing ./include/InputMap.h
+./include/PathDisplay.h:43:  Is this a non-const reference? If so, make const or use a pointer: std::vector<point> &path  [runtime/references] [2]
+Done processing ./include/PathDisplay.h
+Done processing ./include/RRT.h
+Done processing ./app/RRT.cpp
+Done processing ./app/PathDisplay.cpp
+Done processing ./app/Square.cpp
+Done processing ./app/Circle.cpp
+Done processing ./app/Obstacle.cpp
+Done processing ./app/main.cpp
+Done processing ./app/InputMap.cpp
+Done processing ./app/RobotWorkspace.cpp
+Done processing ./test/ObstacleTest.cpp
+Done processing ./test/InputMapTest.cpp
+Done processing ./test/main.cpp
+./test/MockObstacle.cpp:29:  Is this a non-const reference? If so, make const or use a pointer: std::vector<point> &obMap  [runtime/references] [2]
+Done processing ./test/MockObstacle.cpp
+Done processing ./test/PathDisplayTest.cpp
+Done processing ./test/RobotWorkspaceTest.cpp
+Done processing ./test/RRTTest.cpp
+Total errors found: 6
