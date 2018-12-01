@@ -105,3 +105,8 @@ unfold Build Targets, double click on "all" to build all projects.
 select Run As -> Local C/C++ Application
 
 2. Choose the binaries to run (e.g. shell-app, cpp-test for unit testing)
+
+
+## Mock
+The class Obstacle has been mocked using the Google mock framework. </br>
+You can run the test scripts using the cpp-test binaries in eclipse
